@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Sofia Pro Regular"),
+    url("/assets/css/fonts/Sofia Pro Regular Az.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Sofia Pro Italic"),
+    url("/assets/css/fonts/Sofia Pro Regular Italic Az.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Sofia Pro Bold"),
+    url("/assets/css/fonts/Sofia Pro Bold Az.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Sofia Pro Bold Italic"),
+    url("/assets/css/fonts/Sofia Pro Bold Italic Az.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sole Serif";
+  font-style: bold;
+  font-weight: 900;
+  src: local("Sole Serif Text Black"),
+    url("/assets/css/fonts/sole-serif-text-black-webfont.woff2") format("woff2"),
+    url("/assets/css/fonts/sole-serif-text-black-webfont.woff") format("woff");
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  line-height: 1.3;
+}
+input,
+button {
+  font-family: var(--font-sans);
+  line-height: 1;
+}
+h1 {
+  font-family: var(--font-serif);
+  font-size: var(--xl);
+  font-weight: bold;
+}
+h2 {
+  font-family: var(--font-serif);
+  font-size: var(--xxl);
+  font-weight: bold;
+}
+h3 {
+  font-family: var(--font-serif);
+  font-size: var(--xl);
+  font-weight: bold;
+}
+h4 {
+  font-family: var(--font-sans);
+  font-size: var(--md);
+  font-weight: bold;
+}
+p {
+  font-family: var(--font-sans);
+  font-size: var(--md);
+  font-weight: 400;
+}
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: var(--xl);
+  }
+  h3 {
+    font-size: var(--lg);
+  }
+}
