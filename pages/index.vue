@@ -1,11 +1,9 @@
 <template>
   <NuxtLayout>
-    <main>
-      <HomeHero />
-      <HomeAbout />
-      <HomePlaces />
-      <HomeJournal />
-      <HomePodcast />
-    </main>
+    <HomeHero />
+    <HomeAbout />
+    <HomePlaces />
+    <HomeJournal />
+    <HomePodcast />
   </NuxtLayout>
 </template>

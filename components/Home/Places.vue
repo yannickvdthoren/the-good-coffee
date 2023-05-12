@@ -62,12 +62,11 @@ const { data: places } = await useAsyncData("places-data", () =>
 @media screen and (min-width: 651px) {
   section::before {
     content: "";
-    grid-area: 3/1/4/4;
+    position: absolute;
     z-index: -1;
-    top: 0;
-    bottom: 0;
+    top: 100px;
+    bottom: 100px;
     width: 100vw;
-    height: 100%;
     margin-left: calc(50% - 50vw);
     background: var(--cyan);
   }

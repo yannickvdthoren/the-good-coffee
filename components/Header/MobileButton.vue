@@ -16,5 +16,6 @@ button {
   justify-self: end;
   background: none;
   border: none;
+  color: var(--blue);
 }
 </style>

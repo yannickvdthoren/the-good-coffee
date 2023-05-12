@@ -73,10 +73,11 @@ const { data: podcast } = await useAsyncData("podcast-data", () =>
 @media screen and (min-width: 651px) {
   section::before {
     content: "";
-    grid-area: 2/1/3/4;
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
     z-index: -1;
     width: 100vw;
-    height: 100%;
     margin-left: calc(50% - 50vw);
     background: var(--orange);
   }

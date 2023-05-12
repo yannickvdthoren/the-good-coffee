@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <Head>
+    <Title>the good coffee. </Title>
+  </Head>
+  <div class="wrap">
     <NuxtPage />
   </div>
 </template>
