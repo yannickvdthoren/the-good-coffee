@@ -2,7 +2,7 @@
   <li>
     <nuxt-link :to="content._path">
       <picture>
-        <img :src="content.image.url" />
+        <img :src="content.image.src" :alt="content.image.alt" />
       </picture>
       <div class="title">
         <p class="date">{{ content.publish }}</p>

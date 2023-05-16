@@ -1,13 +1,21 @@
 ---
 title: Nomad Community
-description: Nomad Community is a coworking café situated on one of the prettiest streets in Brussels. We met her founder, Aurélie, to talk about her project and the idea she had when she launched it.
+description: "Nomad Community is a coworking café situated on one of the prettiest streets in Brussels. We met her founder, Aurélie, to talk about her project and the idea she had when she launched it."
 image:
   {
-    url: /images/nomad-community/nomad-community-front.jpg,
+    src: /images/nomad-community/nomad-community-front.jpg,
     alt: Photography of the front of nomad community,
     credit: Giorgio Kavadias,
     link: "https://www.instagram.com/giorgiokavadias",
   }
+head:
+  meta:
+    - name: "robots"
+      content: "index, follow"
+    - name: "author"
+      content: "The Good Coffee"
+    - name: "copyright"
+      content: "©2023 The Good Coffee."
 tags: [Design]
 place:
   {
