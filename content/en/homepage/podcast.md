@@ -1,5 +1,5 @@
 ---
-title: the good coffee talks
+title: The Good Coffee Talks
 subtitle: Interview with Moçab, creator of Lobb Coffee
 description: "In French. We met with Lobb to discuss his journey in the world of coffee and his challenge: Opening a café in 100 days. Don't hesitate to follow Lobb on Instagram to stay updated on his news and updates."
 label: Listen and follow us on Spotify
