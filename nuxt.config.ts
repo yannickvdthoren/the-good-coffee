@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [
+        { name: "title", content: "The Good Coffee." },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
