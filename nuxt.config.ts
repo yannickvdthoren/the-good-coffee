@@ -3,6 +3,26 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import VueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 export default defineNuxtConfig({
+  app: {
+    head: {
+      meta: [
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content:
+            "Indulge in the perfect cup with our specialty coffee guide, podcast, and journal - The Good Coffee create your ultimate coffee companions!",
+        },
+        {
+          name: "image",
+          content: "/images/the-good-coffee-banner-image.jpg",
+        },
+      ],
+      noscript: [
+        // <noscript>JavaScript is required</noscript>
+        { children: "JavaScript is required" },
+      ],
+    },
+  },
   runtimeConfig: {
     public: {
       brevoKey: process.env.BREVO_KEY,

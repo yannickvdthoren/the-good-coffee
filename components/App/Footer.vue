@@ -49,7 +49,15 @@
         </template>
       </FooterNav>
     </section>
-    <span class="copy">&copy 2023 All rights reserved to The Good Coffee.</span>
+    <div class="credits">
+      <span class="copy">
+        &copy 2023 All rights reserved to The Good Coffee.
+      </span>
+      <span>
+        Made with love by
+        <a href="https://littlejohntower.com">Little John Tower</a>
+      </span>
+    </div>
     <!-- <form>
       <label for="locale-select">{{ $t("language") }}: </label>
       <select id="locale-select" v-model="$i18n.locale">
@@ -90,8 +98,10 @@
     font-size: var(--sm);
   }
 
-  .copy {
-    display: block;
+  .credits {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     padding: 32px 0;
     font-size: var(--sm);
   }
@@ -127,10 +137,14 @@
     font-size: var(--sm);
   }
 
-  .copy {
-    display: block;
+  .credits {
+    display: flex;
+    justify-content: space-between;
     padding: 32px 0;
     font-size: var(--sm);
+  }
+  .credits a {
+    color: var(--blue);
   }
 }
 </style>
