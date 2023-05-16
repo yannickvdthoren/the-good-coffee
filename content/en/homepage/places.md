@@ -1,7 +1,10 @@
 ---
 title: the good coffee places
-description: "Think of cheeseburgers like a Tinder match. They might not all be your soulmate but you’ve gotta find out to be sure. It can get a little messy and that’s just part of the fun.<br/><br/>
-Some are cheesy, others can be a little dry, and the rare few are a disaster. There are so many cheeseburgers out there it can be hard to commit to just one favourite. That being said, when you know, you just know."
-label: See the map
+description: "The website is dedicated to helping you find the perfect spot to enjoy a cup of exceptional coffee. Whether you're in search of a cozy café in your neighborhood, a trendy coffee shop with a unique ambiance, or a specialty brewer that caters to your preferences, we've got you covered.
+<br /><br />
+With The Good Coffee Places, you can easily navigate through a vast selection of coffee establishments based on your location, preferred filters, and even your favorite coffee brewing methods. No matter if you're a fan of pour-over, espresso, French press, or any other brewing technique, our platform ensures that you'll discover coffee havens that cater to your taste.
+<br /><br />
+Experience the joy of discovering hidden gems, connecting with passionate baristas, and immersing yourself in the art of coffee brewing. Let us be your guide to the world of exceptional coffee, where every sip is an adventure."
+label: Discover the good coffee places
 url: https://the-good-coffee-places.com/
 ---

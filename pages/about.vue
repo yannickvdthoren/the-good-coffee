@@ -3,7 +3,7 @@
     <Title>About | the good coffee. </Title>
   </Head>
   <NuxtLayout>
-    <h1>Index</h1>
-    Some content
+    <h1>About</h1>
+    <p>In maintenance.</p>
   </NuxtLayout>
 </template>

@@ -1,31 +1,71 @@
 <template>
-  <main>
-    <!-- <h1>{{ $t("hello", { name: "vue-i18n" }) }}</h1> -->
-    <form>
-      <label for="locale-select">{{ $t("language") }}: </label>
-      <select v-model="$i18n.locale">
-        <option
-          v-for="locale in $i18n.availableLocales"
-          :key="`locale-${locale}`"
-          :value="locale"
-        >
-          {{ locale }}
-        </option>
-      </select>
-    </form>
-    <ContentDoc :path="'/' + $i18n.locale" />
-    {{ $i18n.locale }}
-    <ContentList :path="'/' + $i18n.locale + '/journal'">
-      <template #default="{ list }">
-        <div v-for="article in list" :key="article._path">
-          <nuxt-link :to="article._path">
-            <h2>{{ article.title }}</h2>
-          </nuxt-link>
-        </div>
-      </template>
-      <template #not-found>
-        <p>No articles found.</p>
-      </template>
-    </ContentList>
-  </main>
+  <NuxtLayout>
+    <article>
+      <JournalHeader :tags="data.tags" :image="data.image">
+        <template v-slot:title>
+          {{ data.title }}
+        </template>
+        <template v-slot:desc>
+          {{ data.description }}
+        </template>
+        <template v-slot:date>
+          {{ data.publish }}
+        </template>
+      </JournalHeader>
+      <section>
+        <ContentDoc>
+          <template #not-found>
+            <p>No articles found.</p>
+          </template>
+        </ContentDoc>
+        <!-- <AppNewsletter /> -->
+      </section>
+      <JournalDetails
+        v-if="data.place"
+        :details="data.place"
+        :title="data.title"
+      />
+    </article>
+  </NuxtLayout>
 </template>
+<script setup>
+const { path } = useRoute();
+
+const { data } = await useAsyncData(`journal-${path}`, () => {
+  return queryContent().where({ _path: path }).findOne();
+});
+</script>
+<style scoped>
+@media screen and (max-width: 650px) {
+  article {
+    margin: 32px 0;
+  }
+  aside {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 651px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr minmax(50ch, 70ch) minmax(20ch, 40ch) 1fr;
+    grid-template-areas: "header header header header" ". article aside .";
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px 80px;
+    margin: 80px 0;
+  }
+  header {
+    grid-area: header;
+  }
+  section {
+    grid-area: article;
+  }
+  aside {
+    grid-area: aside;
+  }
+  aside {
+    position: sticky;
+    top: 134px;
+  }
+}
+</style>

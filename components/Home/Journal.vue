@@ -5,15 +5,11 @@
     <ContentList :path="'/' + $i18n.locale + '/journal'">
       <template #default="{ list }">
         <ul>
-          <li v-for="article in list.slice(0, 3)" :key="article._path">
-            <nuxt-link :to="article._path">
-              <picture>
-                <img :src="article.image" />
-              </picture>
-              <h3>{{ article.title }}</h3>
-              <p>{{ article.description }}</p>
-            </nuxt-link>
-          </li>
+          <AppCard
+            :content="article"
+            v-for="article in list.slice(0, 3)"
+            :key="article._path"
+          />
         </ul>
         <nuxt-link :to="journal.url" class="readMore">
           {{ journal.label }} <IconsArrow />
@@ -44,29 +40,6 @@ const { data: journal } = await useAsyncData("journal-data", () =>
     gap: 16px;
     margin-top: 32px;
   }
-  ul a {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "image title title" "image desc desc";
-    gap: 8px 16px;
-  }
-  picture {
-    grid-area: image;
-    aspect-ratio: 3/4;
-  }
-  h3 {
-    grid-area: title;
-  }
-  ul p {
-    grid-area: desc;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: var(--sm);
-  }
   .readMore {
     margin-top: 32px;
   }
@@ -80,17 +53,18 @@ const { data: journal } = await useAsyncData("journal-data", () =>
   h2 {
     margin-bottom: 16px;
   }
+  p {
+    max-width: 60ch;
+  }
   ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(100% / 3 - 130px), 1fr)
+    );
     gap: 130px;
     margin-top: 80px;
     text-align: left;
-  }
-  ul a {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
   }
   .readMore {
     align-self: center;

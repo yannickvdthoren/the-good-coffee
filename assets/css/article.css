@@ -1,0 +1,62 @@
+article h2 {
+  display: block;
+  margin-bottom: 8px;
+}
+article p {
+  display: block;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+article p a {
+  color: var(--darkPink);
+  transition: color var(--ease);
+}
+@media (hover: hover) {
+  article p a:hover {
+    color: var(--blue);
+  }
+}
+article figure {
+  display: block;
+}
+article figcaption {
+  font-size: var(--sm);
+  text-align: center;
+  color: var(--lightBlue);
+}
+article figcaption a {
+  color: var(--lightBlue);
+}
+@media (hover: hover) {
+  article figcaption a:hover {
+    color: var(--darkPink);
+  }
+}
+@media screen and (max-width: 650px) {
+  article h2 {
+    font-size: var(--ml);
+  }
+  article p {
+    font-size: var(--md);
+  }
+  article figure {
+    margin: 24px 0;
+  }
+  article figcaption {
+    padding-top: 8px;
+  }
+}
+@media screen and (min-width: 651px) {
+  article h2 {
+    font-size: var(--xl);
+  }
+  article p {
+    font-size: var(--lg);
+  }
+  article figure {
+    margin: 32px 0;
+  }
+  article figcaption {
+    padding-top: 16px;
+  }
+}

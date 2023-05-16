@@ -5,7 +5,7 @@
         <IconsLogo v-if="hero.title === 'logo'" class="logo" />
         <h1 v-else>{{ hero.title }}</h1>
         <p>{{ hero.description }}</p>
-        <AppButton>{{ hero.button }}</AppButton>
+        <AppButton v-if="hero.button">{{ hero.button }}</AppButton>
       </div>
       <picture>
         <img
@@ -113,7 +113,7 @@ picture img {
   }
   p {
     margin: 32px 0;
-    font-size: var(--lg);
+    font-size: var(--ml);
   }
   picture {
     flex: 1 0 40ch;

@@ -3,11 +3,17 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import VueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      brevoKey: process.env.BREVO_KEY,
+    },
+  },
   css: [
     "@/assets/css/reset.css",
     "@/assets/css/variables.css",
     "@/assets/css/global.css",
     "@/assets/css/fonts.css",
+    "@/assets/css/article.css",
   ],
   modules: ["@nuxt/content"],
   content: {

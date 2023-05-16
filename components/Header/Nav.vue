@@ -14,7 +14,7 @@
       </li>
       <li><a href="https://the-good-coffee-places.com/">Places</a></li>
       <li>
-        <nuxt-link to="/about">{{ $t("about") }}</nuxt-link>
+        <!-- <nuxt-link to="/about">{{ $t("about") }}</nuxt-link> -->
       </li>
     </ul>
   </nav>

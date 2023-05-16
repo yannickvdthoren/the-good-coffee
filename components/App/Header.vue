@@ -1,36 +1,33 @@
 <template>
-  <header>
+  <header :class="{ pink: path === '/', white: path !== '/' }">
     <HeaderLogo class="header_logo" />
-    <div class="header_menu" :class="{ show: isShowed }">
-      <HeaderNav class="header_nav" />
+    <div class="header_menu" :class="{ show: state.isShowed }">
+      <HeaderNav class="header_nav" @click="noBlock" />
       <HeaderSocial class="header_social" />
     </div>
     <HeaderMobileButton
       class="header_mobileButton"
       @click="showMenu"
-      :menuState="isShowed"
+      :menuState="state.isShowed"
     />
   </header>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      isShowed: false,
-    };
-  },
-  methods: {
-    showMenu() {
-      document.body.classList.value.includes("block-scroll")
-        ? document.body.classList.remove("block-scroll")
-        : document.body.classList.add("block-scroll");
-      document.documentElement.classList.value.includes("block-scroll")
-        ? document.documentElement.classList.remove("block-scroll")
-        : document.documentElement.classList.add("block-scroll");
-      return this.isShowed ? (this.isShowed = false) : (this.isShowed = true);
-    },
-  },
-};
+<script setup>
+import { reactive } from "vue";
+const { path } = useRoute();
+const state = reactive({ isShowed: false });
+
+function showMenu() {
+  document.body.classList.value.includes("block-scroll")
+    ? document.body.classList.remove("block-scroll")
+    : document.body.classList.add("block-scroll");
+
+  return state.isShowed ? (state.isShowed = false) : (state.isShowed = true);
+}
+
+function noBlock() {
+  document.body.classList.remove("block-scroll");
+}
 </script>
 <style scoped>
 header {
@@ -51,7 +48,12 @@ header::before {
   bottom: 0;
   width: 100vw;
   margin-left: calc(50% - 50vw);
+}
+header.pink::before {
   background: var(--lightPink);
+}
+header.white::before {
+  background: var(--white);
 }
 .header_logo {
   grid-column: logo;

@@ -4,12 +4,10 @@
     <IconsClose v-else />
   </button>
 </template>
-<script>
-export default {
-  props: {
-    menuState: Boolean,
-  },
-};
+<script setup>
+const props = defineProps({
+  menuState: Boolean,
+});
 </script>
 <style scoped>
 button {

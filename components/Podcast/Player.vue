@@ -16,52 +16,50 @@
     <span id="duration" class="time">0:00</span>
   </div>
 </template>
-<script>
-export default {
-  props: {
-    audio: String,
-  },
-  mounted() {
-    const audio = document.querySelector("audio");
-    const duration = document.getElementById("duration");
-    const play = document.getElementById("play");
-    const pause = document.getElementById("pause");
-    const currentTime = document.getElementById("current-time");
-    const trackPosition = document.getElementById("trackPosition");
+<script setup>
+import { onMounted } from "vue";
+const props = defineProps({
+  audio: String,
+});
+onMounted(() => {
+  const audio = document.querySelector("audio");
+  const duration = document.getElementById("duration");
+  const play = document.getElementById("play");
+  const pause = document.getElementById("pause");
+  const currentTime = document.getElementById("current-time");
+  const trackPosition = document.getElementById("trackPosition");
 
-    const calculateTime = (secs) => {
-      const minutes = Math.floor(secs / 60);
-      const seconds = Math.floor(secs % 60);
-      const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-      return `${minutes}:${returnedSeconds}`;
-    };
+  const calculateTime = (secs) => {
+    const minutes = Math.floor(secs / 60);
+    const seconds = Math.floor(secs % 60);
+    const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    return `${minutes}:${returnedSeconds}`;
+  };
 
-    duration.textContent = calculateTime(audio.duration);
+  duration.textContent = calculateTime(audio.duration);
 
-    play.addEventListener("click", () => {
-      audio.play();
-      play.classList.add("play");
-      play.classList.remove("pause");
-      pause.classList.add("play");
-      pause.classList.remove("pause");
-    });
+  play.addEventListener("click", () => {
+    audio.play();
+    play.classList.add("play");
+    play.classList.remove("pause");
+    pause.classList.add("play");
+    pause.classList.remove("pause");
+  });
 
-    pause.addEventListener("click", () => {
-      audio.pause();
-      play.classList.add("pause");
-      play.classList.remove("play");
-      pause.classList.add("pause");
-      pause.classList.remove("play");
-    });
+  pause.addEventListener("click", () => {
+    audio.pause();
+    play.classList.add("pause");
+    play.classList.remove("play");
+    pause.classList.add("pause");
+    pause.classList.remove("play");
+  });
 
-    audio.addEventListener("timeupdate", function () {
-      currentTime.textContent = calculateTime(audio.currentTime);
-      trackPosition.style.width =
-        (Math.floor(audio.currentTime) / Math.floor(audio.duration)) * 100 +
-        "%";
-    });
-  },
-};
+  audio.addEventListener("timeupdate", function () {
+    currentTime.textContent = calculateTime(audio.currentTime);
+    trackPosition.style.width =
+      (Math.floor(audio.currentTime) / Math.floor(audio.duration)) * 100 + "%";
+  });
+});
 </script>
 <style scoped>
 #audio_player {

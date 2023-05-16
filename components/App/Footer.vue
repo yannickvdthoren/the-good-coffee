@@ -4,26 +4,35 @@
       <div>
         <HeaderLogo />
         <p>
-          Think of cheeseburgers like a Tinder match. They might not all be your
-          soulmate but you’ve gotta find out to be sure. It can get a little
-          messy and that’s just part of the fun.
+          Indulge in the perfect cup with our specialty coffee guide, podcast,
+          and journal - The Good Coffee create your ultimate coffee companions!
         </p>
-        <!-- <FooterNewsletter /> -->
+        <!-- <AppNewsletter :lite="true" /> -->
       </div>
       <FooterNav>
         <template v-slot:header> Websites </template>
         <template v-slot:list>
-          <li><a href="">The Good Coffee Places</a></li>
-          <li><a href="">The Good Coffee Journal</a></li>
-          <li><a href="">The Good Coffee Talks</a></li>
+          <li>
+            <a href="https://the-good-coffee-places.com/">
+              The Good Coffee Places
+            </a>
+          </li>
+          <li><nuxt-link to="/journal">The Good Coffee Journal</nuxt-link></li>
+          <li>
+            <a
+              href="https://open.spotify.com/show/3hPsZTW9UdsHqlXqwbh05q?si=d01d548ea2ac479f"
+            >
+              The Good Coffee Talks
+            </a>
+          </li>
         </template>
       </FooterNav>
       <FooterNav>
         <template v-slot:header> Sitemap </template>
         <template v-slot:list>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li><nuxt-link to="/">Home</nuxt-link></li>
+          <!-- <li><a href="">About</a></li> -->
+          <li><a href="mailto:yannick@the-good-coffee.com">Contact</a></li>
         </template>
       </FooterNav>
       <FooterNav>
@@ -41,6 +50,14 @@
       </FooterNav>
     </section>
     <span class="copy">&copy 2023 All rights reserved to The Good Coffee.</span>
+    <!-- <form>
+      <label for="locale-select">{{ $t("language") }}: </label>
+      <select id="locale-select" v-model="$i18n.locale">
+        <option value="en">en</option>
+        <option value="fr">fr</option>
+        <option value="nl">nl</option>
+      </select>
+    </form> -->
   </footer>
 </template>
 <style scoped>
@@ -86,6 +103,7 @@
     z-index: -1;
     top: 0;
     bottom: 0;
+    left: 0;
     width: 100vw;
     margin-left: calc(50% - 50vw);
     background: var(--blue);

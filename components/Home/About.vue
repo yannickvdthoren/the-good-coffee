@@ -3,7 +3,9 @@
     <ContentRenderer>
       <h2>{{ about.title }}</h2>
       <p v-html="about.description"></p>
-      <nuxt-link :to="about.url">{{ about.label }} <IconsArrow /></nuxt-link>
+      <nuxt-link :to="about.url" v-if="about.label"
+        >{{ about.label }} <IconsArrow
+      /></nuxt-link>
     </ContentRenderer>
   </section>
 </template>
