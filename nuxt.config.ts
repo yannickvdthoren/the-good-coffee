@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     "@/assets/css/fonts.css",
     "@/assets/css/article.css",
   ],
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/robots"],
   content: {
     // My custom configuration
     locales: [

@@ -13,6 +13,7 @@
     "nuxt": "^3.4.3"
   },
   "dependencies": {
+    "@nuxtjs/robots": "^3.0.0",
     "vue-i18n": "^9.2.2"
   }
 }
