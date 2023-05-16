@@ -17,6 +17,20 @@ export default defineNuxtConfig({
           name: "image",
           content: "/images/the-good-coffee-banner-image.jpg",
         },
+        { name: "og:title", content: "The Good Coffee." },
+        {
+          name: "og:description",
+          content:
+            "Indulge in the perfect cup with our specialty coffee guide, podcast, and journal - The Good Coffee create your ultimate coffee companions!",
+        },
+        {
+          name: "og:image",
+          content: "/images/the-good-coffee-banner-image.jpg",
+        },
+        {
+          name: "og:type",
+          content: "website",
+        },
       ],
       noscript: [
         // <noscript>JavaScript is required</noscript>
