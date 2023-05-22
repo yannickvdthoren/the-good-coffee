@@ -15,7 +15,7 @@ head:
       content: "The Good Coffee"
     - name: "copyright"
       content: "©2023 The Good Coffee."
-tags: [Knowledge]
+tags: [Guide]
 publish: May 22th, 2023
 ---
 

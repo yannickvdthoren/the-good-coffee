@@ -17,7 +17,7 @@ head:
       content: "The Good Coffee"
     - name: "copyright"
       content: "©2023 The Good Coffee."
-tags: [Design]
+tags: [Visit]
 place:
   {
     name: Nomad Community,
