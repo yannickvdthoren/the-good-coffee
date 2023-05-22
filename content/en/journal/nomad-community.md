@@ -1,5 +1,6 @@
 ---
 title: Nomad Community
+excerpt: "Nomad Community is a coworking café situated on one of the prettiest streets in Brussels. We met her founder, Aurélie, to talk about her project and the idea she had when she launched it."
 description: "Nomad Community is a coworking café situated on one of the prettiest streets in Brussels. We met her founder, Aurélie, to talk about her project and the idea she had when she launched it."
 image:
   {

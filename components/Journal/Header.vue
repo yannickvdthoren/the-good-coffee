@@ -10,7 +10,7 @@
     <p class="date">Published <slot name="date"></slot></p>
     <figure v-if="props.image">
       <img :src="props.image.src" :alt="props.image.alt" />
-      <figcaption>
+      <figcaption v-if="props.image.credit">
         Photo by
         <a :href="props.image.link" target="_blank">{{ props.image.credit }}</a>
       </figcaption>

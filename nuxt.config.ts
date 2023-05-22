@@ -31,6 +31,10 @@ export default defineNuxtConfig({
           name: "og:type",
           content: "website",
         },
+        {
+          name: "og:author",
+          content: "The Good Coffee.",
+        },
       ],
       noscript: [
         // <noscript>JavaScript is required</noscript>

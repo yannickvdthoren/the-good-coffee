@@ -8,7 +8,7 @@
         <p class="date">{{ content.publish }}</p>
         <h3>{{ content.title }}</h3>
       </div>
-      <p>{{ content.description }}</p>
+      <p>{{ content.excerpt }}</p>
     </nuxt-link>
   </li>
 </template>
