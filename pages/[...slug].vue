@@ -9,7 +9,7 @@
           {{ data.description }}
         </template>
         <template v-slot:date>
-          {{ data.publish }}
+          {{ data.date }}
         </template>
       </JournalHeader>
       <section>

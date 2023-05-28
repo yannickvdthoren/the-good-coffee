@@ -16,7 +16,8 @@ article p a {
     color: var(--blue);
   }
 }
-article figure {
+article figure,
+article img {
   display: block;
 }
 article figcaption {
@@ -32,6 +33,10 @@ article figcaption a {
     color: var(--darkPink);
   }
 }
+article .gallery p {
+  display: flex;
+  gap: 16px;
+}
 @media screen and (max-width: 650px) {
   article h2 {
     font-size: var(--ml);
@@ -39,7 +44,8 @@ article figcaption a {
   article p {
     font-size: var(--md);
   }
-  article figure {
+  article figure,
+  article p > img {
     margin: 24px 0;
   }
   article figcaption {
@@ -53,7 +59,8 @@ article figcaption a {
   article p {
     font-size: var(--lg);
   }
-  article figure {
+  article figure,
+  article p > img {
     margin: 32px 0;
   }
   article figcaption {

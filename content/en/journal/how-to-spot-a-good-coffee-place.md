@@ -16,7 +16,7 @@ head:
     - name: "copyright"
       content: "©2023 The Good Coffee."
 tags: [Guide]
-publish: May 22th, 2023
+date: May 22th, 2023
 ---
 
 ## 1. Not overly marketed

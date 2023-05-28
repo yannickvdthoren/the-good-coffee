@@ -5,7 +5,8 @@
         <img :src="content.image.src" :alt="content.image.alt" />
       </picture>
       <div class="title">
-        <p class="date">{{ content.publish }}</p>
+        <p class="category">{{ content.tags[0] }}</p>
+        <!-- <p class="date">{{ content.date }}</p> -->
         <h3>{{ content.title }}</h3>
       </div>
       <p>{{ content.excerpt }}</p>
@@ -41,6 +42,12 @@ const props = defineProps({
     color: var(--lightBlue);
     line-height: 1;
   }
+  .category {
+    margin-bottom: 4px;
+    font-size: var(--xs);
+    color: var(--darkPink);
+    line-height: 1;
+  }
   .title {
     grid-area: title;
     align-self: flex-end;
@@ -63,14 +70,26 @@ const props = defineProps({
     flex-direction: column;
     align-items: flex-start;
   }
+  picture {
+    grid-area: image;
+    aspect-ratio: 4/3;
+    height: 300px;
+  }
   .date {
     margin-top: 16px;
     font-size: var(--sm);
     color: var(--lightBlue);
     line-height: 1;
   }
+  .category {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: var(--sm);
+    color: var(--darkPink);
+    line-height: 1;
+  }
   h3 {
-    margin: 0px 0 16px;
+    margin: 0px 0 8px;
   }
 }
 </style>

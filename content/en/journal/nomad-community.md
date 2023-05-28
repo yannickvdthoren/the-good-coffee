@@ -17,18 +17,18 @@ head:
       content: "The Good Coffee"
     - name: "copyright"
       content: "©2023 The Good Coffee."
-tags: [Visit]
+tags: [Places]
 place:
   {
     name: Nomad Community,
-    address: "Rue Vanderschrick 5, 1060 Saint-Gilles",
+    address: "5 rue Vanderschrick - Vanderschrick straat, 1060 Saint-Gilles - Belgium",
     maps: "https://goo.gl/maps/5XeR5skQa3JDpcUq8",
     opening: "Monday to Friday from 9:00 to 18:00 & Saturday and Sunday from 10:00 to 18:00",
     email: info@nomadcommunity.be,
     website: https://www.nomad-community.be,
     instagram: nomad_coworking_cafe,
   }
-publish: May 15th, 2023
+date: May 15th, 2023
 ---
 
 ## What is your favourite coffee?
