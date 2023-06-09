@@ -87,3 +87,9 @@ p {
     font-size: var(--lg);
   }
 }
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}

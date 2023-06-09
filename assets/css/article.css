@@ -2,6 +2,10 @@ article h2 {
   display: block;
   margin-bottom: 8px;
 }
+article h3 {
+  display: block;
+  margin-bottom: 8px;
+}
 article p {
   display: block;
   margin-bottom: 16px;
@@ -41,6 +45,9 @@ article .gallery p {
   article h2 {
     font-size: var(--ml);
   }
+  article h3 {
+    font-size: var(--lg);
+  }
   article p {
     font-size: var(--md);
   }
@@ -55,6 +62,9 @@ article .gallery p {
 @media screen and (min-width: 651px) {
   article h2 {
     font-size: var(--xl);
+  }
+  article h3 {
+    font-size: var(--ml);
   }
   article p {
     font-size: var(--lg);

@@ -2,7 +2,7 @@
   <section class="journal" v-if="journal">
     <h2>{{ journal.title }}</h2>
     <p>{{ journal.description }}</p>
-    <ContentList :path="'/' + $i18n.locale + '/journal'">
+    <ContentList :path="'/' + $i18n.locale + '/journal'" :sort="[{ date: -1 }]">
       <template #default="{ list }">
         <ul>
           <AppCard
@@ -46,7 +46,7 @@ const { data: journal } = await useAsyncData("journal-data", () =>
 }
 @media screen and (min-width: 651px) {
   section {
-    margin: 224px 0;
+    margin: 140px 0;
     display: flex;
     flex-direction: column;
   }

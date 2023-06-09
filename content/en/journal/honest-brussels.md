@@ -26,7 +26,7 @@ place:
     website: https://honestbrussels.com/,
     instagram: honest.brussels,
   }
-date: May 29th, 2023
+date: 05/29/2023
 ---
 
 You won't find Honest in one of the touristy streets of Brussels. They opened their café doors in a part of the city where no one had dared to venture before. What stands out immediately upon arrival is the simplicity and discreetness of the building facade. There's no big sign announcing the café, but rather small subtle details like lit lamps outside, lettering on the windows, and wooden signage on the side of the building, indicating that there's something intriguing inside.

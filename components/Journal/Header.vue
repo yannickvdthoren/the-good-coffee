@@ -7,7 +7,7 @@
     </ul>
     <h1><slot name="title"></slot></h1>
     <p class="desc"><slot name="desc"></slot></p>
-    <p class="date">Published <slot name="date"></slot></p>
+    <p class="date"><slot name="date"></slot></p>
     <figure v-if="props.image">
       <img :src="props.image.src" :alt="props.image.alt" />
       <figcaption v-if="props.image.credit">
@@ -66,6 +66,7 @@ li {
 @media screen and (min-width: 651px) {
   h1 {
     margin: 24px 0;
+    max-width: 30ch;
   }
   .desc {
     max-width: 71ch;

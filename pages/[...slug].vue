@@ -9,7 +9,7 @@
           {{ data.description }}
         </template>
         <template v-slot:date>
-          {{ data.date }}
+          {{ transformDate(data.date) }}
         </template>
       </JournalHeader>
       <section>
@@ -34,6 +34,29 @@ const { path } = useRoute();
 const { data } = await useAsyncData(`journal-${path}`, () => {
   return queryContent().where({ _path: path }).findOne();
 });
+
+function transformDate(date) {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const theDate = new Date(date);
+  const month = theDate.getMonth();
+  const year = theDate.getFullYear();
+  const day = theDate.getDate();
+
+  return `${day} ${months[month]} ${year}`;
+}
 </script>
 <style scoped>
 @media screen and (max-width: 650px) {

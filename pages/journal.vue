@@ -4,7 +4,7 @@
   </Head>
   <NuxtLayout>
     <h1>the good coffee journal.</h1>
-    <ContentList :path="'/' + $i18n.locale + '/journal'">
+    <ContentList :path="'/' + $i18n.locale + '/journal'" :sort="[{ date: -1 }]">
       <template #default="{ list }">
         <ul>
           <AppCard
@@ -20,11 +20,6 @@
     </ContentList>
   </NuxtLayout>
 </template>
-<script setup lang="ts">
-const { data: journal } = await useAsyncData("journal-data", () =>
-  queryContent("/en/homepage/journal").findOne()
-);
-</script>
 <style scoped>
 @media screen and (max-width: 650px) {
   h1 {

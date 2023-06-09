@@ -28,7 +28,7 @@ place:
     website: https://www.nomad-community.be,
     instagram: nomad_coworking_cafe,
   }
-date: May 15th, 2023
+date: 05/15/2023
 ---
 
 ## What is your favourite coffee?
