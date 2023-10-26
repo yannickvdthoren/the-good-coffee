@@ -55,7 +55,9 @@ export default defineNuxtConfig({
     "@/assets/css/article.css",
   ],
   modules: ["@nuxt/content", "@nuxtjs/robots"],
+
   content: {
+    documentDriven: true,
     // My custom configuration
     locales: [
       {

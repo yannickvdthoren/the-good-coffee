@@ -1,49 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
 @font-face {
-  font-family: "Sofia Pro";
+  font-family: "Brandon Text";
+  src: local("Brandon Text Bold"),
+    url("../fonts/hvd_fonts_-_brandontext-bold-webfont.woff2") format("woff2"),
+    url("../fonts/hvd_fonts_-_brandontext-bold-webfont.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
-  font-weight: 400;
-  src: local("Sofia Pro Regular"),
-    url("../fonts/Sofia Pro Regular Az.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: "Sofia Pro";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Sofia Pro Italic"),
-    url("../fonts/Sofia Pro Regular Italic Az.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Sofia Pro";
+  font-family: "Brandon Text";
+  src: local("Brandon Text Reguar"),
+    url("../fonts/hvd_fonts_-_brandontext-regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/hvd_fonts_-_brandontext-regular-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 700;
-  src: local("Sofia Pro Bold"),
-    url("../fonts/Sofia Pro Bold Az.woff") format("woff");
   font-display: swap;
 }
-
 @font-face {
-  font-family: "Sofia Pro";
+  font-family: "Brandon Text";
+  src: local("Brandon Text Regular Italic"),
+    url("../fonts/hvd_fonts_-_brandontext-regularitalic-webfont.woff2")
+      format("woff2"),
+    url("../fonts/hvd_fonts_-_brandontext-regularitalic-webfont.woff")
+      format("woff");
+  font-weight: normal;
   font-style: italic;
-  font-weight: 700;
-  src: local("Sofia Pro Bold Italic"),
-    url("../fonts/Sofia Pro Bold Italic Az.woff") format("woff");
   font-display: swap;
 }
-
-@font-face {
-  font-family: "Sole Serif";
-  font-style: bold;
-  font-weight: 900;
-  src: local("Sole Serif Text Black"),
-    url("../fonts/sole-serif-text-black-webfont.woff2") format("woff2"),
-    url("../fonts/sole-serif-text-black-webfont.woff") format("woff");
-  font-display: swap;
+:root {
+  --font-sans: "Brandon Text", "Josefin Sans", Arial, Helvetica, sans-serif;
+  --font-serif: "Merriweather", Georgia, "Times New Roman", Times, serif;
 }
-
 html,
 body {
   font-family: var(--font-sans);

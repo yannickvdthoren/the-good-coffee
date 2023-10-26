@@ -11,13 +11,15 @@
   --orange: #fdbf66;
   --lightOrange: #f5d5a6;
   --white: #fff;
+  --green: #165152;
 
-  --text: var(--blue);
-  --black: var(--blue);
+  --text: var(--green);
+  --black: var(--green);
 
   --border-radius: 4px;
   --padding: 8px;
   --margin: 8px;
+  --wrap-margin: 32px;
 
   --xxs: 10px;
   --xs: 12px;
@@ -37,7 +39,4 @@
   --screen-desktop: 1440px;
 
   --full-bleed: calc(50% - 50vw);
-
-  --font-sans: "Sofia Pro", Arial, Helvetica, sans-serif;
-  --font-serif: "Sole Serif", Georgia, "Times New Roman", Times, serif;
 }

@@ -5,7 +5,7 @@
 </template>
 <style scoped>
 svg {
-  width: 174px;
+  width: 130px;
   height: auto;
 }
 @media screen and (max-width: 651px) {

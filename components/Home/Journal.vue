@@ -2,15 +2,13 @@
   <section class="journal" v-if="journal">
     <h2>{{ journal.title }}</h2>
     <p>{{ journal.description }}</p>
-    <ContentList :path="'/' + $i18n.locale + '/journal'" :sort="[{ date: -1 }]">
+    <ContentList :path="'/en/journal'" :sort="[{ date: -1 }]">
       <template #default="{ list }">
-        <ul>
-          <AppCard
-            :content="article"
-            v-for="article in list.slice(0, 3)"
-            :key="article._path"
-          />
-        </ul>
+        <CardArticle
+          :content="article"
+          v-for="article in list.slice(1, 8)"
+          :key="article._path"
+        />
         <nuxt-link :to="journal.url" class="readMore">
           {{ journal.label }} <IconsArrow />
         </nuxt-link>

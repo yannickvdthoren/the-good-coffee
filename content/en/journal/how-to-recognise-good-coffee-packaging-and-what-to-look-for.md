@@ -4,7 +4,7 @@ excerpt: "Discovering a beloved local coffee spot prompts the quest for great co
 description: "Now that you have found your favorite coffee spot near your home, you might be wondering how to find good coffee to enjoy at home. It's usually best to go directly to your coffee shop or a roaster to buy some beans, but occasionally, small shops also sell coffee beans. The challenging part is determining whether that coffee is of good quality."
 image:
   {
-    src: /images/coffee-packaging/naga-coffee.jpg,
+    src: /images/coffee-packaging/how-to-recognize.jpeg,
     alt: "Photo of the details on the box of coffee from Naga Specialty Coffee",
     credit: Naga specialty coffee,
     link: "https://naga.coffee/",
@@ -19,6 +19,7 @@ head:
       content: "©2023 The Good Coffee."
 tags: [Guide]
 date: 06/04/2023
+background: "#e9eaea"
 ---
 
 Recognizing good coffee is achievable by examining the label on the bag and the various information that you can and want to read on it. Here is a list of everything that could be included on a coffee label.

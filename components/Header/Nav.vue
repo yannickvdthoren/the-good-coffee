@@ -5,16 +5,19 @@
         <nuxt-link to="/">{{ $t("home") }}</nuxt-link>
       </li>
       <li><nuxt-link to="/journal">Journal</nuxt-link></li>
-      <li>
+      <!-- <li>
         <a
           href="https://open.spotify.com/show/3hPsZTW9UdsHqlXqwbh05q?si=d01d548ea2ac479f"
           rel="noreferrer"
           >Talks</a
         >
+      </li> -->
+      <li>
+        <nuxt-link to="/market">{{ $t("market") }}</nuxt-link>
       </li>
       <li><a href="https://the-good-coffee-places.com/">Places</a></li>
       <li>
-        <!-- <nuxt-link to="/about">{{ $t("about") }}</nuxt-link> -->
+        <nuxt-link to="/about">{{ $t("about") }}</nuxt-link>
       </li>
     </ul>
   </nav>

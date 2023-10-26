@@ -1,44 +1,62 @@
 <template>
-  <header :class="{ pink: path === '/', white: path !== '/' }">
+  <header :class="{ white: headerbg }">
     <HeaderLogo class="header_logo" />
-    <div class="header_menu" :class="{ show: state.isShowed }">
+    <div class="header_menu" :class="{ show: isShowed }">
       <HeaderNav class="header_nav" @click="noBlock" />
       <HeaderSocial class="header_social" />
     </div>
     <HeaderMobileButton
       class="header_mobileButton"
       @click="showMenu"
-      :menuState="state.isShowed"
+      :menuState="isShowed"
     />
   </header>
 </template>
-<script setup>
-import { reactive } from "vue";
-const { path } = useRoute();
-const state = reactive({ isShowed: false });
+<script>
+export default {
+  data() {
+    return {
+      isShowed: false,
+      headerbg: false,
+    };
+  },
+  methods: {
+    showMenu() {
+      document.body.classList.value.includes("block-scroll")
+        ? document.body.classList.remove("block-scroll")
+        : document.body.classList.add("block-scroll");
 
-function showMenu() {
-  document.body.classList.value.includes("block-scroll")
-    ? document.body.classList.remove("block-scroll")
-    : document.body.classList.add("block-scroll");
-
-  return state.isShowed ? (state.isShowed = false) : (state.isShowed = true);
-}
-
-function noBlock() {
-  document.body.classList.remove("block-scroll");
-}
+      return this.isShowed ? (this.isShowed = false) : (this.isShowed = true);
+    },
+    noBlock() {
+      document.body.classList.remove("block-scroll");
+    },
+    changeHeaderBg() {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          this.headerbg = true;
+        } else {
+          this.headerbg = false;
+        }
+      });
+    },
+  },
+  mounted() {
+    this.changeHeaderBg();
+  },
+};
 </script>
 <style scoped>
 header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  left: 0;
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "logo menu menu";
   align-items: center;
-  padding: 32px 0;
+  width: 100%;
+  padding: 32px;
 }
 header::before {
   content: "";
@@ -49,11 +67,16 @@ header::before {
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
-header.pink::before {
-  background: var(--lightPink);
-}
 header.white::before {
-  background: var(--white);
+  animation: whiteBackground 0.3s ease-in-out forwards;
+}
+@keyframes whiteBackground {
+  from {
+    background: transparent;
+  }
+  to {
+    background: var(--white);
+  }
 }
 .header_logo {
   grid-column: logo;
