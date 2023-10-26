@@ -1,40 +1,38 @@
 <template>
   <NuxtLayout>
     <article>
-      <JournalHeader :tags="data.tags" :image="data.image">
-        <template v-slot:title>
-          {{ data.title }}
-        </template>
-        <template v-slot:desc>
-          {{ data.description }}
-        </template>
-        <template v-slot:date>
-          {{ transformDate(data.date) }}
-        </template>
-      </JournalHeader>
+      <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
+        <JournalHeader :tags="data.tags" :image="data.image">
+          <template v-slot:title>
+            {{ data.title }}
+          </template>
+          <template v-slot:desc>
+            {{ data.description }}
+          </template>
+          <template v-slot:date>
+            {{ transformDate(data.date) }}
+          </template>
+        </JournalHeader>
+      </ContentQuery>
       <section>
         <ContentDoc>
           <template #not-found>
             <p>No articles found.</p>
           </template>
         </ContentDoc>
-        <!-- <AppNewsletter /> -->
+        <AppNewsletter />
       </section>
-      <JournalDetails
-        v-if="data.place"
-        :details="data.place"
-        :title="data.title"
-      />
+      <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
+        <JournalDetails
+          v-if="data.place"
+          :details="data.place"
+          :title="data.title"
+        />
+      </ContentQuery>
     </article>
   </NuxtLayout>
 </template>
 <script setup>
-const { path } = useRoute();
-
-const { data } = await useAsyncData(`journal-${path}`, () => {
-  return queryContent().where({ _path: path }).findOne();
-});
-
 function transformDate(date) {
   const months = [
     "January",

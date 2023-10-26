@@ -4,10 +4,10 @@
   </Head>
   <NuxtLayout>
     <h1>the good coffee journal.</h1>
-    <ContentList :path="'/' + $i18n.locale + '/journal'" :sort="[{ date: -1 }]">
+    <ContentList :path="'/en/journal'" :sort="[{ date: -1 }]">
       <template #default="{ list }">
         <ul>
-          <AppCard
+          <CardArticle
             :content="article"
             v-for="article in list"
             :key="article._path"
