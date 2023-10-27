@@ -45,13 +45,13 @@ li {
   font-weight: 600;
 }
 .lg li {
-  gap: 16px;
+  gap: var(--md);
 }
 .lg svg {
-  width: 20px;
-  height: 20px;
+  width: var(--lg);
+  height: var(--lg);
 }
 .lg span {
-  font-size: 16px;
+  font-size: var(--md);
 }
 </style>

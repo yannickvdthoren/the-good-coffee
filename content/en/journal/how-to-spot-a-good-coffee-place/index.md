@@ -4,7 +4,7 @@ excerpt: "In today's world, finding a good coffee shop in a big city can be chal
 description: "In today's world, it's quite difficult to travel to a big city that has no good coffee shops or at least one. The only problem you are facing is: 'How to recognize a good coffee place?' Here are some hints that would give clear markers to discern the good ones from the bad ones. But beware, sometimes, the bad ones are really good at looking like the good ones."
 image:
   {
-    src: /images/how-to-spot-a-goof-coffee-place/my-little-cup.jpeg,
+    src: media/my-little-cup.jpeg,
     alt: Photography of the front of My Little Cup in Brussels,
   }
 head:
@@ -33,7 +33,7 @@ And yeah, I forgot a major detail: the words "Specialty Coffee" written somewher
 
 The second step when entering a good coffee place is to try and decipher the menu. Yes, you know what coffee is, and you might even know the difference between a cappuccino and a latte. But what on earth is the name of the coffee being served? Sometimes, you'll even have to choose between two different coffee beans when ordering your drink. That, my friend, is proof that you are in good hands. Having the choice between two types of coffee and a multitude of ways to have your coffee – V60, Chemex, French Press, etc. – is the best indicator that you are in the right place. And if you don't know anything about coffee beans and have no one here to guide you, then…
 
-![Bags of beans on the counter of Stella Specialty Coffee Bar](/images/how-to-spot-a-goof-coffee-place/coffee-beans.jpeg)
+![Bags of beans on the counter of Stella Specialty Coffee Bar](media/coffee-beans.jpeg)
 
 ## 3. … the Barista knows their stuff and can answer your question
 
@@ -47,7 +47,7 @@ Are you in a rush? Sorry to hear that. I know that in today's world, everything 
 
 And it should. Coffee is a potion that takes time to brew and be well done. A lot of stuff happens behind a coffee machine, and the barista wants to give you the best coffee possible in each cup. Just sit down and relax, take a deep breath, discuss with people around you, take the time to fully awaken —yes, we know some of you aren't exactly awake when you come for your coffee—. You are in good hands, and soon enough, you'll have a good coffee in your hands.
 
-![The front of the cafe boudin where people are seated reading a book or discussing together](/images/how-to-spot-a-goof-coffee-place/cafe-boudin.jpeg)
+![The front of the cafe boudin where people are seated reading a book or discussing together](media/cafe-boudin.jpeg)
 
 ## 5. Final act, the taste
 

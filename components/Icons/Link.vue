@@ -1,10 +1,5 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="153.382"
-    height="21.467"
-    viewBox="0 0 153.382 21.467"
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.382 21.467">
     <g
       id="Group_23"
       data-name="Group 23"

@@ -4,7 +4,7 @@ excerpt: "Discovering a beloved local coffee spot prompts the quest for great co
 description: "Now that you have found your favorite coffee spot near your home, you might be wondering how to find good coffee to enjoy at home. It's usually best to go directly to your coffee shop or a roaster to buy some beans, but occasionally, small shops also sell coffee beans. The challenging part is determining whether that coffee is of good quality."
 image:
   {
-    src: /images/coffee-packaging/how-to-recognize.jpeg,
+    src: media/how-to-recognize.jpeg,
     alt: "Photo of the details on the box of coffee from Naga Specialty Coffee",
     credit: Naga specialty coffee,
     link: "https://naga.coffee/",
@@ -44,7 +44,7 @@ When it comes to coffee sourced from a specific region, the name of the coffee w
 
 An essential aspect to consider when making your coffee choice is the taste. The challenge with good coffee is that, similar to wine, each coffee is unique, resulting in distinct flavors. While blends may not showcase individual flavors prominently, single origin coffees tend to have distinct flavor profiles that are noticeable when you drink them. It is important to have an understanding of the potential flavors beforehand, which is why the package often includes information about the flavors present in the coffee.
 
-![Exemple of two coffee labels with the differents informations for the single origin and the blend](/images/coffee-packaging/coffee-label.jpeg)
+![Exemple of two coffee labels with the differents informations for the single origin and the blend](media/coffee-label.jpeg)
 
 ## Traceability
 
@@ -81,7 +81,7 @@ Coffee is a product that is best enjoyed when it is fresh. When examining a labe
 Last but not least, occasionally you will find the name of the producer on the label. This indicates that your coffee truly originates from a specific place and is associated with a particular producer. Having the name of the producer provides an added level of authenticity and traceability, allowing you to connect with the people behind the coffee and appreciate the unique characteristics of the beans.
 
 <figure>
-  <img src="/images/coffee-packaging/naga-coffee-collection.jpg" alt="Picture of boxes of coffee from Naga Specialty Coffee and a hand pouring coffee into a cup" />
+  <img src="media/naga-coffee-collection.jpg" alt="Picture of boxes of coffee from Naga Specialty Coffee and a hand pouring coffee into a cup" />
   <figcaption>
     Photo by
     <a href="https://naga.coffee/" 

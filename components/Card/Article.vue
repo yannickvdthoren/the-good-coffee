@@ -4,7 +4,7 @@
       :src="content.image.src ? content.image.src : ''"
       :alt="content.image.alt ? content.image.alt : ''"
       class="picture"
-      aspectRatio="none"
+      aspectRatio="unset"
       v-if="section === 'Une'"
     />
     <ImagePicture
@@ -19,21 +19,32 @@
         :date="content.date ? content.date : ''"
         :size="metadataSize"
       />
-      <CardTitle
-        :title="content.title ? content.title : ''"
-        :section="section"
+      <LinkPrimary
+        type="nuxt"
+        :link="content._path ? content._path : ''"
         class="title"
-      />
-      <CardExcerpt
-        :content="content.excerpt ? content.excerpt : ''"
+      >
+        <TextH2 v-if="section === 'Une'" fontSize="var(--xxxl)">
+          {{ content.title ? content.title : "" }}
+        </TextH2>
+        <TextH3 fontSize="var(--xxl)" v-else>{{
+          content.title ? content.title : ""
+        }}</TextH3>
+      </LinkPrimary>
+      <TextParagraph
+        fontSize="var(--ml)"
+        letterSpacing="0.25px"
         v-if="excerpt"
-      />
+        class="desktop"
+      >
+        {{ content.excerpt ? content.excerpt : "" }}
+      </TextParagraph>
       <LinkPrimary
         type="nuxt"
         :link="content._path ? content._path : ''"
         class="link"
       >
-        Read the post
+        <ButtonReadMore> Read the post </ButtonReadMore>
       </LinkPrimary>
     </div>
   </div>
@@ -50,21 +61,37 @@ export default {
 };
 </script>
 <style scoped>
+.details {
+  position: relative;
+}
 .une {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 0 calc(5 * var(--margin));
   align-items: center;
+  min-height: 100vh;
 }
 .une .details {
   grid-area: details;
 }
 .une .picture {
   grid-area: img;
-  margin-right: calc(var(--full-bleed) / 2);
   max-height: 100vh;
 }
 @media screen and (max-width: 650px) {
+  .une {
+    grid-template-areas: "details details details details" "img img img img";
+    margin-top: 120px;
+  }
+  .une .title {
+    margin: 8px 0 24px;
+  }
+  .une .link {
+    margin-top: 32px;
+  }
+  .une .picture {
+    margin-right: var(--full-bleed);
+  }
 }
 @media screen and (min-width: 651px) {
   .une {
@@ -75,6 +102,9 @@ export default {
   }
   .une .link {
     margin-top: 56px;
+  }
+  .une .picture {
+    margin-right: calc(var(--full-bleed) / 2);
   }
 }
 </style>

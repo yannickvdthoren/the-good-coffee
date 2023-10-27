@@ -1,5 +1,5 @@
 <template>
-  <AppHeader />
+  <HeaderPrimary />
   <main>
     <slot></slot>
   </main>

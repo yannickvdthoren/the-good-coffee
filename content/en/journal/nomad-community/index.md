@@ -4,7 +4,7 @@ excerpt: "Nomad Community is a coworking café situated on one of the prettiest 
 description: "Nomad Community is a coworking café situated on one of the prettiest streets in Brussels. We met her founder, Aurélie, to talk about her project and the idea she had when she launched it."
 image:
   {
-    src: /images/nomad-community/nomad-community-front.jpg,
+    src: media/nomad-community-front.jpg,
     alt: Photography of the front of nomad community,
     credit: Giorgio Kavadias,
     link: "https://www.instagram.com/giorgiokavadias",
@@ -46,7 +46,7 @@ I tried the coworking offices in Brussels. The offices are amazing and well desi
 Thinking about what I saw in Paris I searched for coworking cafés in Brussels and didn't find any. Willing to create a place and missing contact with people on a day-to-day basis, I decided to give it a go and create my own place.
 
 <figure>
-  <img src="/images/nomad-community/nomad-community-aurelie.jpg" alt="Picture from Aurelie. A smiling brown girl sitted in a sofa chair." />
+  <img src="media/nomad-community-aurelie.jpg" alt="Picture from Aurelie. A smiling brown girl sitted in a sofa chair." />
   <figcaption>
     Photo by
     <a href="https://www.instagram.com/cecile.belhomme/" target="_blank">Cécile Belhomme</a>
@@ -74,7 +74,7 @@ I wanted something big, minimum of 100 square meters, with lots of natural light
 I wanted it to be in Schaerbeek, Ixelles, Brussels, Saint-Gilles or Uccle. And it was mandatory to be a Food & Beverage assignment. We serve coffee and food and I didn't want to have a problem with it.
 
 <figure>
-  <img src="/images/nomad-community/nomad-community-meeting.jpg" alt="Picture of a bright meeting room." />
+  <img src="media/nomad-community-meeting.jpg" alt="Picture of a bright meeting room." />
   <figcaption>
     Photo by
     <a href="https://www.instagram.com/giorgiokavadias" target="_blank">Giorgio Kavadias</a>
@@ -98,7 +98,7 @@ I guess you can be faster but the place hunting and the Covid took a big dent on
 But the most time-consuming was to await the administrative part. You have to wait for the visit of the firefighters and send a document to the town hall. And then, you have to wait to get an official document that says you can open the place. I waited 3 weeks to have it.
 
 <figure>
-  <img src="/images/nomad-community/nomad-community-view.jpg" alt="Picture of a bright meeting room." />
+  <img src="media/nomad-community-view.jpg" alt="Picture of a bright meeting room." />
   <figcaption>
     Photo by
     <a href="https://www.instagram.com/giorgiokavadias" target="_blank">Giorgio Kavadias</a>
@@ -124,7 +124,7 @@ I went to other places. Every time I tried to sense what I liked in there. What 
 I hesitated for a long time to introduce colours. I like the bold colours used in Colombia and Mexico, bright, well-balanced and mixed. But I didn't feel confident doing it by myself. I found ideas on Pinterest as well and bit by bit everything came into place. That's a great feeling to look at what you saved as inspiration and see what you have accomplished.
 
 <figure>
-  <img src="/images/nomad-community/nomad-community-principal.jpg" alt="Picture of Nomad Community main room." />
+  <img src="media/nomad-community-principal.jpg" alt="Picture of Nomad Community main room." />
   <figcaption>
     Photo by
     <a href="https://www.instagram.com/giorgiokavadias" target="_blank">Giorgio Kavadias</a>
@@ -158,7 +158,7 @@ When you launch, do it step by step. Don't try to launch everything all at once.
 Take professional photos, right at the beginning. Share the backstage and talk about what's happening. People like to see how a project evolves and see the before-after.
 
 <figure>
-  <img src="/images/nomad-community/nomad-community-detail.jpg" alt="Picture of a bright meeting room." />
+  <img src="media/nomad-community-detail.jpg" alt="Picture of a bright meeting room." />
   <figcaption>
     Photo by
     <a href="https://www.instagram.com/giorgiokavadias" target="_blank">Giorgio Kavadias</a>

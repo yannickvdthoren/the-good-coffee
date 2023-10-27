@@ -22,6 +22,11 @@
     </ul>
   </nav>
 </template>
+<script>
+export default {
+  name: "Menu Header",
+};
+</script>
 <style scoped>
 ul {
   display: flex;
@@ -37,7 +42,6 @@ ul {
   li a {
     display: block;
     padding-bottom: 16px;
-    border-bottom: 1px solid var(--pink);
   }
   li:last-child a {
     border: none;

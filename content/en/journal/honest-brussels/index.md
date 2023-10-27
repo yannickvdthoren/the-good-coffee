@@ -3,10 +3,7 @@ title: Honest Brussels
 excerpt: "We had the opportunity to meet Elodie and Cécile to discuss the creation of Honest, one of the latest additions to the café scene in Brussels."
 description: "We had the opportunity to meet Elodie and Cécile to discuss the creation of Honest, one of the latest additions to the café scene in Brussels."
 image:
-  {
-    src: /images/honest/honest-bar.jpg,
-    alt: Photography of the bar Honest Brussels,
-  }
+  { src: media/honest-bar.jpg, alt: Photography of the bar Honest Brussels }
 head:
   meta:
     - name: "robots"
@@ -31,7 +28,7 @@ date: 05/29/2023
 
 You won't find Honest in one of the touristy streets of Brussels. They opened their café doors in a part of the city where no one had dared to venture before. What stands out immediately upon arrival is the simplicity and discreetness of the building facade. There's no big sign announcing the café, but rather small subtle details like lit lamps outside, lettering on the windows, and wooden signage on the side of the building, indicating that there's something intriguing inside.
 
-![Photo of the front façade of Honest Brussels](/images/honest/honest-front.jpeg)
+![Photo of the front façade of Honest Brussels](media/honest-front.jpeg)
 
 As soon as you step inside, you immediately feel the atmosphere of a modern Belgian bistro. Original elements, such as ceiling moldings and swinging doors, have been preserved and cleverly incorporated into the decor, maintaining the soul of the building. The design studio, etudes.architecture, has brought a touch of modernity with furniture like the red-tiled bar and the metal shelf behind it, displaying glasses, and the quirky detail of coffee grounds wallpaper. It's no wonder that the local residents were won over from the opening day, as Elodie shares: "We opened the door, and people from the neighborhood showed up on the first day even before the official opening. And they all say the same thing, that it was missing in the neighborhood."
 
@@ -39,8 +36,8 @@ In addition to being a restaurant, Honest also houses a roastery, a crucial addi
 
 <div class="gallery">
 
-![Photo of the ambiance inside of Honest Brussels](/images/honest/honest-ambient.jpg)
-![Photo of the torrefaction machine from Honest Brussels](/images/honest/honest-roaster.jpg)
+![Photo of the ambiance inside of Honest Brussels](media/honest-ambient.jpg)
+![Photo of the torrefaction machine from Honest Brussels](media/honest-roaster.jpg)
 
 </div>
 
