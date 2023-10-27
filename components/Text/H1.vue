@@ -1,5 +1,14 @@
 <template>
-  <h1 :style="{ textAlign: textAlign, color: color, fontSize: fontSize }">
+  <h1
+    :style="{
+      textAlign: textAlign,
+      color: color,
+      fontSize: fontSize,
+      textTransform: textTransform,
+      fontFamily: fontFamily,
+      letterSpacing: letterSpacing,
+    }"
+  >
     <slot></slot>
   </h1>
 </template>
@@ -18,6 +27,18 @@ export default {
     color: {
       type: String,
       default: "var(--Black)",
+    },
+    textTransform: {
+      type: String,
+      default: "initial",
+    },
+    fontFamily: {
+      type: String,
+      default: "initial",
+    },
+    letterSpacing: {
+      type: String,
+      default: "initial",
     },
   },
 };

@@ -2,7 +2,7 @@
   <footer>
     <section class="footer_bck">
       <div>
-        <HeaderLogo />
+        <LogoPrimary />
         <p>
           Indulge in the perfect cup with our specialty coffee guide, podcast,
           and journal - The Good Coffee create your ultimate coffee companions!

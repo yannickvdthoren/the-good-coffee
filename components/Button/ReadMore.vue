@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span :style="{ maxWidth: maxWidth }">
     <slot></slot>
     <IconsLink />
   </span>
@@ -7,6 +7,9 @@
 <script>
 export default {
   name: "Button Read More",
+  props: {
+    maxWidth: String,
+  },
 };
 </script>
 <style scoped>

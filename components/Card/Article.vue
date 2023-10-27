@@ -44,7 +44,7 @@
         :link="content._path ? content._path : ''"
         class="link"
       >
-        <ButtonReadMore> Read the post </ButtonReadMore>
+        <ButtonReadMore maxWidth="10ch"> Read the post </ButtonReadMore>
       </LinkPrimary>
     </div>
   </div>
@@ -77,6 +77,7 @@ export default {
 .une .picture {
   grid-area: img;
   max-height: 100vh;
+  z-index: 0;
 }
 @media screen and (max-width: 650px) {
   .une {

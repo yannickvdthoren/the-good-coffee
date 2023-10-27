@@ -54,5 +54,6 @@ export default {
 <style scoped>
 .une {
   grid-column: span 4;
+  min-height: 110vh;
 }
 </style>

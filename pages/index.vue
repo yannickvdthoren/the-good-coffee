@@ -1,8 +1,8 @@
 <template>
   <NuxtLayout>
-    <HomeMarketBanner class="marketBanner" />
-    <HomeUne class="une" />
-    <HomeJournal class="journal" />
+    <SectionMarketBanner class="marketBanner" />
+    <SectionUne class="une" />
+    <SectionJournal class="journal" />
   </NuxtLayout>
 </template>
 <script>

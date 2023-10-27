@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "Grid Primary",
+  name: "Grid Secondary",
   props: {
     section: String,
   },
@@ -23,7 +23,6 @@ section {
 @media screen and (min-width: 651px) {
   section {
     max-width: 1512px;
-    padding: 0 100px;
   }
 }
 </style>

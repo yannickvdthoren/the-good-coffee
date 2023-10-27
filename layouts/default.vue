@@ -31,6 +31,7 @@ export default {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 1761px) {
   .wrap {
