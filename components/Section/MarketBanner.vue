@@ -39,4 +39,9 @@ export default {
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
+@media screen and (max-width: 650px) {
+  .banner {
+    padding: 32px 48px;
+  }
+}
 </style>
