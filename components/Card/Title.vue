@@ -13,3 +13,11 @@ export default {
   },
 };
 </script>
+<style scoped>
+h2 {
+  font-size: var(--xxxl);
+}
+h3 {
+  font-size: var(--xxl);
+}
+</style>

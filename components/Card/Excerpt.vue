@@ -11,3 +11,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+p {
+  font-size: var(--ml);
+  letter-spacing: 0.25px;
+}
+</style>

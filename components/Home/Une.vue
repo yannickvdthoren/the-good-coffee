@@ -1,10 +1,5 @@
 <template>
-  <ContentList
-    :path="'/en/journal'"
-    :sort="[{ date: -1 }]"
-    @mouseenter="handleLoad('Couleur')"
-    v-slot="{ list }"
-  >
+  <ContentList :path="'/en/journal'" :sort="[{ date: -1 }]" v-slot="{ list }">
     <GridPrimary section="Une">
       <CardArticle
         :content="article"
@@ -12,6 +7,7 @@
         :key="article._path"
         section="Une"
         :excerpt="true"
+        metadataSize="lg"
       />
     </GridPrimary>
   </ContentList>

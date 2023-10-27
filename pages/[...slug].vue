@@ -32,29 +32,34 @@
     </article>
   </NuxtLayout>
 </template>
-<script setup>
-function transformDate(date) {
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  const theDate = new Date(date);
-  const month = theDate.getMonth();
-  const year = theDate.getFullYear();
-  const day = theDate.getDate();
+<script>
+export default {
+  name: "Page ...slug",
+  methods: {
+    transformDate(date) {
+      const months = [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre",
+      ];
+      const theDate = new Date(date);
+      const month = theDate.getMonth();
+      const year = theDate.getFullYear();
+      const day = theDate.getDate();
 
-  return `${day} ${months[month]} ${year}`;
-}
+      return `${day} ${months[month]} ${year}`;
+    },
+  },
+};
 </script>
 <style scoped>
 @media screen and (max-width: 650px) {

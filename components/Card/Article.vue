@@ -11,22 +11,30 @@
       :src="content.image.src ? content.image.src : ''"
       :alt="content.image.alt ? content.image.alt : ''"
       class="picture"
-      v-else="section === 'Une'"
+      v-else
     />
     <div class="details">
-      <CardMetadata
+      <MetadataPrimary
         :tags="content.tags ? content.tags : ''"
         :date="content.date ? content.date : ''"
+        :size="metadataSize"
       />
       <CardTitle
         :title="content.title ? content.title : ''"
         :section="section"
+        class="title"
       />
       <CardExcerpt
         :content="content.excerpt ? content.excerpt : ''"
         v-if="excerpt"
       />
-      <nuxt-link :to="content._path ? content._path : ''">Read more</nuxt-link>
+      <LinkPrimary
+        type="nuxt"
+        :link="content._path ? content._path : ''"
+        class="link"
+      >
+        Read the post
+      </LinkPrimary>
     </div>
   </div>
 </template>
@@ -37,6 +45,7 @@ export default {
     content: Object,
     section: String,
     excerpt: Boolean,
+    metadataSize: String,
   },
 };
 </script>
@@ -60,6 +69,12 @@ export default {
 @media screen and (min-width: 651px) {
   .une {
     grid-template-areas: "details details img img";
+  }
+  .une .title {
+    margin: 16px 0 48px;
+  }
+  .une .link {
+    margin-top: 56px;
   }
 }
 </style>

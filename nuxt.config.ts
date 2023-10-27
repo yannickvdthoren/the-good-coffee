@@ -54,7 +54,7 @@ export default defineNuxtConfig({
     "@/assets/css/fonts.css",
     "@/assets/css/article.css",
   ],
-  modules: ["@nuxt/content", "@nuxtjs/robots"],
+  modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/robots"],
 
   content: {
     documentDriven: true,
