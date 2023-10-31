@@ -1,23 +1,41 @@
 <template>
-  <section class="journal" v-if="journal">
-    <h2>{{ journal.title }}</h2>
-    <p>{{ journal.description }}</p>
-    <ContentList :path="'/en/journal'" :sort="[{ date: -1 }]">
+  <GridPrimary section="journal" class="journal">
+    <TextH2
+      textTransform="uppercase"
+      color="var(--darkPink)"
+      fontFamily="var(--sans-serif)"
+      fontSize="var(--ml)"
+    >
+      Latest articles
+    </TextH2>
+    <ContentList :path="'/'" :sort="[{ date: -1 }]">
       <template #default="{ list }">
         <CardArticle
           :content="article"
-          v-for="article in list.slice(1, 8)"
+          v-for="article in list.slice(1, 3)"
           :key="article._path"
+          aspectRatio="1.5/1"
+          class="articles first"
+          metadataSize="md"
+          titleSize="var(--xl)"
+          borderRadius="8px"
         />
-        <nuxt-link :to="journal.url" class="readMore">
-          {{ journal.label }} <IconsArrow />
-        </nuxt-link>
+        <CardArticle
+          :content="article"
+          v-for="article in list.slice(3, 7)"
+          :key="article._path"
+          aspectRatio="1/1.2"
+          class="articles"
+          metadataSize="md"
+          titleSize="var(--ml)"
+          borderRadius="8px"
+        />
       </template>
       <template #not-found>
-        <p>No articles found.</p>
+        <TextParagraph> No articles found. </TextParagraph>
       </template>
     </ContentList>
-  </section>
+  </GridPrimary>
 </template>
 <script setup lang="ts">
 const { data: journal } = await useAsyncData("journal-data", () =>
@@ -25,48 +43,19 @@ const { data: journal } = await useAsyncData("journal-data", () =>
 );
 </script>
 <style scoped>
+.journal h2 {
+  grid-column: 1 / span 4;
+  margin: 56px 0 16px;
+}
+
 @media screen and (max-width: 650px) {
-  section {
-    margin: 64px 0;
-  }
-  h2 {
-    margin-bottom: 16px;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 32px;
-  }
-  .readMore {
-    margin-top: 32px;
+  .articles {
+    grid-column: span 4;
   }
 }
 @media screen and (min-width: 651px) {
-  section {
-    margin: 140px 0;
-    display: flex;
-    flex-direction: column;
-  }
-  h2 {
-    margin-bottom: 16px;
-  }
-  p {
-    max-width: 60ch;
-  }
-  ul {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(calc(100% / 3 - 130px), 1fr)
-    );
-    gap: 130px;
-    margin-top: 80px;
-    text-align: left;
-  }
-  .readMore {
-    align-self: center;
-    margin-top: 80px;
+  .articles.first {
+    grid-column: span 2;
   }
 }
 </style>

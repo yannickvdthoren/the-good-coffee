@@ -54,4 +54,14 @@ li {
 .lg span {
   font-size: var(--md);
 }
+.md li {
+  gap: var(--sm);
+}
+.md svg {
+  width: var(--md);
+  height: var(--md);
+}
+.md span {
+  font-size: var(--sm);
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <ContentList :path="'/en/journal'" :sort="[{ date: -1 }]" v-slot="{ list }">
+  <ContentList :path="'/'" :sort="[{ date: -1 }]" v-slot="{ list }">
     <GridPrimary section="Une">
       <CardArticle
         :content="article"
@@ -8,6 +8,9 @@
         section="Une"
         :excerpt="true"
         metadataSize="lg"
+        :showButton="true"
+        aspectRatio="unset"
+        titleSize="var(--xxxl)"
       />
     </GridPrimary>
   </ContentList>
@@ -36,7 +39,7 @@ export default {
     async loadColor() {
       // Get the last article in the journal folder & return the value
       const res = await useAsyncData("background", () =>
-        queryContent("/en/journal").sort({ date: -1 }).limit(1).find()
+        queryContent("/").sort({ date: -1 }).limit(1).find()
       );
       return (this.color = res.data.value[0]);
     },

@@ -1,16 +1,14 @@
 <template>
   <NuxtLayout>
-    <article>
+    <GridArticle article="article">
       <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
-        <JournalHeader :tags="data.tags" :image="data.image">
+        <JournalHeader
+          :tags="data.tags ? data.tags : ''"
+          :image="data.image ? data.image : ''"
+          :date="data.date ? data.date : ''"
+        >
           <template v-slot:title>
             {{ data.title }}
-          </template>
-          <template v-slot:desc>
-            {{ data.description }}
-          </template>
-          <template v-slot:date>
-            {{ transformDate(data.date) }}
           </template>
         </JournalHeader>
       </ContentQuery>
@@ -20,7 +18,6 @@
             <p>No articles found.</p>
           </template>
         </ContentDoc>
-        <AppNewsletter />
       </section>
       <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
         <JournalDetails
@@ -29,7 +26,7 @@
           :title="data.title"
         />
       </ContentQuery>
-    </article>
+    </GridArticle>
   </NuxtLayout>
 </template>
 <script>
@@ -62,6 +59,33 @@ export default {
 };
 </script>
 <style scoped>
+article {
+  position: relative;
+}
+article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  margin-left: var(--full-bleed);
+  background: white;
+  z-index: 0;
+}
+header {
+  grid-area: header;
+  z-index: 1;
+}
+section {
+  grid-area: article;
+  z-index: 1;
+}
+aside {
+  grid-area: aside;
+  z-index: 1;
+}
 @media screen and (max-width: 650px) {
   article {
     margin: 32px 0;
@@ -72,26 +96,14 @@ export default {
 }
 @media screen and (min-width: 651px) {
   article {
-    display: grid;
-    grid-template-columns: 1fr minmax(50ch, 70ch) minmax(20ch, 40ch) 1fr;
-    grid-template-areas: "header header header header" ". article aside .";
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px 80px;
-    margin: 80px 0;
-  }
-  header {
-    grid-area: header;
-  }
-  section {
-    grid-area: article;
-  }
-  aside {
-    grid-area: aside;
+    grid-template-areas: "header header header header" "article article article aside";
   }
   aside {
     position: sticky;
     top: 134px;
+  }
+  section {
+    padding-right: 120px;
   }
 }
 </style>

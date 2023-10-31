@@ -1,6 +1,6 @@
 <template>
   <header :class="{ white: headerbg, show: isShowed }">
-    <LinkPrimary to="/" @click="noBlock" class="logo">
+    <LinkPrimary link="/" @click="noBlock" class="logo">
       <LogoPrimary />
     </LinkPrimary>
     <div class="menu">
@@ -49,6 +49,7 @@ export default {
 header {
   position: fixed;
   left: 0;
+  top: 0;
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -99,11 +100,12 @@ div {
   display: none;
   grid-area: button;
 }
-@media screen and (max-width: 651px) {
+@media screen and (max-width: 650px) {
   header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo button" "menu menu";
+    padding: 24px 32px;
   }
   .menu {
     display: none;

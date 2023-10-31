@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li>
-        <nuxt-link to="/">{{ $t("home") }}</nuxt-link>
+        <nuxt-link to="/">Accueil</nuxt-link>
       </li>
       <li><nuxt-link to="/journal">Journal</nuxt-link></li>
       <!-- <li>
@@ -13,11 +13,11 @@
         >
       </li> -->
       <li>
-        <nuxt-link to="/market">{{ $t("market") }}</nuxt-link>
+        <nuxt-link to="/market">Market</nuxt-link>
       </li>
       <li><a href="https://the-good-coffee-places.com/">Places</a></li>
       <li>
-        <nuxt-link to="/about">{{ $t("about") }}</nuxt-link>
+        <nuxt-link to="/about">&Agrave; propos</nuxt-link>
       </li>
     </ul>
   </nav>

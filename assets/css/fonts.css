@@ -52,11 +52,13 @@ h2 {
   font-family: var(--font-serif);
   font-size: var(--xxl);
   font-weight: bold;
+  line-height: 1.2;
 }
 h3 {
   font-family: var(--font-serif);
   font-size: var(--xl);
   font-weight: bold;
+  line-height: 1.2;
 }
 h4 {
   font-family: var(--font-sans);

@@ -7,7 +7,7 @@
         <IconsExternal />
       </a>
     </address>
-    <p>Open {{ props.details.opening }}</p>
+    <p>Ouvert {{ props.details.opening }}</p>
     <ul>
       <li>
         <a :href="'mailto:' + props.details.email">{{ props.details.email }}</a>

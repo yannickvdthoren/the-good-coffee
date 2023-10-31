@@ -1,33 +1,38 @@
 <template>
-  <div :class="{ une: section === 'Une' }">
+  <div :class="{ une: section === 'Une', article: section !== 'Une' }">
     <ImagePicture
       :src="content.image.src ? content.image.src : ''"
       :alt="content.image.alt ? content.image.alt : ''"
       class="picture"
-      aspectRatio="unset"
+      :aspectRatio="aspectRatio"
+      :borderRadius="borderRadius"
       v-if="section === 'Une'"
     />
-    <ImagePicture
-      :src="content.image.src ? content.image.src : ''"
-      :alt="content.image.alt ? content.image.alt : ''"
+    <LinkPrimary
+      :link="content._path ? content._path : ''"
       class="picture"
       v-else
-    />
+    >
+      <ImagePicture
+        :src="content.image.src ? content.image.src : ''"
+        :alt="content.image.alt ? content.image.alt : ''"
+        class="picture"
+        :aspectRatio="aspectRatio"
+        :borderRadius="borderRadius"
+      />
+    </LinkPrimary>
     <div class="details">
       <MetadataPrimary
         :tags="content.tags ? content.tags : ''"
         :date="content.date ? content.date : ''"
         :size="metadataSize"
+        class="metadata"
       />
-      <LinkPrimary
-        type="nuxt"
-        :link="content._path ? content._path : ''"
-        class="title"
-      >
-        <TextH2 v-if="section === 'Une'" fontSize="var(--xxxl)">
+      <LinkPrimary :link="content._path ? content._path : ''" class="title">
+        <TextH2 v-if="section === 'Une'" :fontSize="titleSize">
           {{ content.title ? content.title : "" }}
         </TextH2>
-        <TextH3 fontSize="var(--xxl)" v-else>{{
+        <TextH3 :fontSize="titleSize" v-else>{{
           content.title ? content.title : ""
         }}</TextH3>
       </LinkPrimary>
@@ -40,9 +45,9 @@
         {{ content.excerpt ? content.excerpt : "" }}
       </TextParagraph>
       <LinkPrimary
-        type="nuxt"
         :link="content._path ? content._path : ''"
         class="link"
+        v-if="showButton === true"
       >
         <ButtonReadMore maxWidth="10ch"> Read the post </ButtonReadMore>
       </LinkPrimary>
@@ -57,6 +62,10 @@ export default {
     section: String,
     excerpt: Boolean,
     metadataSize: String,
+    showButton: Boolean,
+    aspectRatio: String,
+    titleSize: String,
+    borderRadius: String,
   },
 };
 </script>
@@ -64,6 +73,7 @@ export default {
 .details {
   position: relative;
 }
+
 .une {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -79,11 +89,28 @@ export default {
   max-height: 100vh;
   z-index: 0;
 }
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.article .details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 @media screen and (max-width: 650px) {
+  .article .picture {
+    aspect-ratio: 1.5/1 !important;
+  }
+  .article .title h3 {
+    font-size: var(--xl) !important;
+  }
   .une {
     grid-template-areas: "details details details details" "img img img img";
     margin-top: 120px;
   }
+
   .une .title {
     margin: 8px 0 24px;
   }

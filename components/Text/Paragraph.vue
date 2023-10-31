@@ -4,7 +4,10 @@
       textAlign: textAlign,
       color: color,
       fontSize: fontSize,
+      textTransform: textTransform,
+      fontFamily: fontFamily,
       letterSpacing: letterSpacing,
+      fontWeight: fontWeight,
     }"
   >
     <slot></slot>
@@ -16,7 +19,7 @@ export default {
   props: {
     fontSize: {
       type: String,
-      default: "var(--md)",
+      default: "var(--xl)",
     },
     textAlign: {
       type: String,
@@ -24,13 +27,24 @@ export default {
     },
     color: {
       type: String,
-      default: "var(--Black)",
+      default: "var(--black)",
+    },
+    textTransform: {
+      type: String,
+      default: "initial",
+    },
+    fontFamily: {
+      type: String,
+      default: "var(--sans-serif)",
     },
     letterSpacing: {
       type: String,
-      default: "0",
+      default: "initial",
+    },
+    fontWeight: {
+      type: String,
+      default: "400",
     },
   },
 };
 </script>
-<style scoped></style>

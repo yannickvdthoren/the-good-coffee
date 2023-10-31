@@ -16,8 +16,9 @@ export default {
 span {
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
   gap: 0;
-  font-size: var(--ml);
+  font-size: var(--lg);
   letter-spacing: 0.25px;
 }
 span svg {

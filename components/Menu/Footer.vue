@@ -1,8 +1,12 @@
 <template>
   <nav>
-    <p>
+    <TextParagraph
+      fontWeight="bold"
+      fontFamily="var(--font-serif)"
+      fontSize="var(--md)"
+    >
       <slot name="header"></slot>
-    </p>
+    </TextParagraph>
     <ul>
       <slot name="list"></slot>
     </ul>
@@ -11,7 +15,6 @@
 <style scoped>
 p {
   padding-bottom: 24px;
-  font-family: var(--font-serif);
 }
 ul {
   display: flex;

@@ -1,17 +1,27 @@
 <template>
-  <picture
+  <figure
     :style="{ aspectRatio: aspectRatio, borderRadius: borderRadius }"
     :class="{ 'full-bleed': fullBleed === true }"
   >
     <ImageImg :src="src" :alt="alt" :objectFit="objectFit" />
-  </picture>
+    <figcaption v-if="credit">
+      Photo by
+      <a :href="link" target="_blank">{{ credit }}</a>
+    </figcaption>
+  </figure>
 </template>
 <script>
 export default {
-  name: "Image Picture",
+  name: "Image figure",
   props: {
     src: String,
     alt: String,
+    credit: String,
+    link: String,
+    fullBleed: {
+      type: Boolean,
+      default: false,
+    },
     aspectRatio: {
       type: String,
       default: "3/4",
@@ -23,10 +33,6 @@ export default {
     objectFit: {
       type: String,
       default: "Cover",
-    },
-    fullBleed: {
-      type: Boolean,
-      default: false,
     },
   },
 };

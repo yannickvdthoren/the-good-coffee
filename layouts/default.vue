@@ -3,7 +3,7 @@
   <main>
     <slot></slot>
   </main>
-  <AppFooter />
+  <FooterPrimary />
 </template>
 <script>
 export default {

@@ -4,7 +4,7 @@
   </Head>
   <NuxtLayout>
     <h1>the good coffee journal.</h1>
-    <ContentList :path="'/en/journal'" :sort="[{ date: -1 }]">
+    <ContentList :path="'/'" :sort="[{ date: -1 }]">
       <template #default="{ list }">
         <ul>
           <CardArticle

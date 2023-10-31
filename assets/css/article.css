@@ -20,7 +20,7 @@ article p a {
     color: var(--blue);
   }
 }
-article figure,
+article section figure,
 article img {
   display: block;
 }
@@ -69,7 +69,7 @@ article .gallery p {
   article p {
     font-size: var(--lg);
   }
-  article figure,
+  article section figure,
   article p > img {
     margin: 32px 0;
   }

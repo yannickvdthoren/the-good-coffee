@@ -2,12 +2,18 @@
   <Head>
     <Title>the good coffee.</Title>
   </Head>
-  <div class="wrap" :style="{ backgroundColor: backgroundColor }">
+  <div
+    class="wrap"
+    :style="{
+      backgroundColor: backgroundColor,
+    }"
+  >
     <NuxtPage />
   </div>
 </template>
 <script>
 import { useCookie } from "#app";
+
 export default {
   name: "App",
   data() {

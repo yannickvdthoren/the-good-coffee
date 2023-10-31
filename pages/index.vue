@@ -3,6 +3,9 @@
     <SectionMarketBanner class="marketBanner" />
     <SectionUne class="une" />
     <SectionJournal class="journal" />
+    <LinkPrimary link="/journal" type="nuxt" class="readMore">
+      <ButtonReadMore maxWidth="13ch"> See more articles </ButtonReadMore>
+    </LinkPrimary>
   </NuxtLayout>
 </template>
 <script>
@@ -19,5 +22,10 @@ export default {
 }
 .journal {
   order: 3;
+}
+.readMore {
+  order: 4;
+  margin-top: 56px;
+  margin-bottom: 80px;
 }
 </style>
