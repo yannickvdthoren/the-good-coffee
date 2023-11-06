@@ -4,8 +4,9 @@
       <div class="business">
         <LogoPrimary class="logo" />
         <TextParagraph fontSize="var(--md)">
-          Indulge in the perfect cup with our specialty coffee guide, podcast,
-          and journal - The Good Coffee create your ultimate coffee companions!
+          Offrez-vous la tasse parfaite avec notre guide de café de spécialité,
+          notre podcast et notre journal – The Good Coffee crée vos compagnons
+          de café ultimes !
         </TextParagraph>
       </div>
       <div class="menu">
