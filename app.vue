@@ -12,19 +12,16 @@
   </div>
 </template>
 <script>
-import { useCookie } from "#app";
-
 export default {
   name: "App",
-  data() {
-    return {
-      backgroundColor: "",
-    };
+  async setup() {
+    const res = await useAsyncData("background", () =>
+      queryContent("/").sort({ date: -1 }).limit(1).find()
+    );
+    return { res };
   },
   created() {
-    // Get the cookie (setup in Une.vue) with the color information and set the color to the background
-    const siteBackground = useCookie("siteBackground");
-    this.backgroundColor = siteBackground.value;
+    this.backgroundColor = this.res.data.value[0].background;
   },
 };
 </script>
