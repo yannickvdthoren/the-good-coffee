@@ -20,6 +20,9 @@ article {
   align-items: flex-start;
 }
 @media screen and (max-width: 650px) {
+  article {
+    padding: 88px 0 80px;
+  }
 }
 @media screen and (min-width: 651px) {
   article {

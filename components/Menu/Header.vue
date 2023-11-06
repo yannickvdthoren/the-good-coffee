@@ -2,9 +2,11 @@
   <nav>
     <ul>
       <li>
-        <nuxt-link to="/">Accueil</nuxt-link>
+        <LinkPrimary link="/" type="nuxt"> Accueil </LinkPrimary>
       </li>
-      <li><nuxt-link to="/journal">Journal</nuxt-link></li>
+      <li>
+        <LinkPrimary link="/journal" type="nuxt"> Journal </LinkPrimary>
+      </li>
       <!-- <li>
         <a
           href="https://open.spotify.com/show/3hPsZTW9UdsHqlXqwbh05q?si=d01d548ea2ac479f"
@@ -13,12 +15,18 @@
         >
       </li> -->
       <li>
-        <nuxt-link to="/market">Market</nuxt-link>
+        <LinkPrimary link="https://market.the-good-coffee.com">
+          Marketplace
+        </LinkPrimary>
       </li>
-      <li><a href="https://the-good-coffee-places.com/">Places</a></li>
       <li>
-        <nuxt-link to="/about">&Agrave; propos</nuxt-link>
+        <LinkPrimary link="https://the-good-coffee-places.com/">
+          Places
+        </LinkPrimary>
       </li>
+      <!-- <li>
+        <nuxt-link to="/about">&Agrave; propos</nuxt-link>
+      </li> -->
     </ul>
   </nav>
 </template>

@@ -10,11 +10,11 @@
         letterSpacing="0.25px"
         class="title"
       >
-        Buy Ethical and Quality coffee on our marketplace
+        Achetez du café éthique et de qualité sur notre marketpalce
       </TextH1>
       <BannerRoasters />
       <LinkPrimary type="nuxt" link="/market" class="link">
-        <ButtonReadMore maxWidth="12ch">Buy good coffee</ButtonReadMore>
+        <ButtonReadMore maxWidth="15ch">Acheter du bon café</ButtonReadMore>
       </LinkPrimary>
     </div>
   </GridSecondary>

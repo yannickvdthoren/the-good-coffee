@@ -4,7 +4,7 @@
     <SectionUne class="une" />
     <SectionJournal class="journal" />
     <LinkPrimary link="/journal" type="nuxt" class="readMore">
-      <ButtonReadMore maxWidth="13ch"> See more articles </ButtonReadMore>
+      <ButtonReadMore maxWidth="16ch"> Voir tous les articles </ButtonReadMore>
     </LinkPrimary>
   </NuxtLayout>
 </template>

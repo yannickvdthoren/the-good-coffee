@@ -21,9 +21,8 @@
       </section>
       <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
         <JournalDetails
-          v-if="data.place"
-          :details="data.place"
-          :title="data.title"
+          v-if="data.details"
+          :details="data.details ? data.details : ''"
         />
       </ContentQuery>
     </GridArticle>
@@ -88,10 +87,7 @@ aside {
 }
 @media screen and (max-width: 650px) {
   article {
-    margin: 32px 0;
-  }
-  aside {
-    margin-top: 32px;
+    grid-template-areas: "header header header header" "aside aside aside aside" "article article article article";
   }
 }
 @media screen and (min-width: 651px) {

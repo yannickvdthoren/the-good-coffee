@@ -10,7 +10,7 @@
       <TextH3 fontSize="var(--lg)">
         {{ content.name }}
       </TextH3>
-      <TextParagraph fontSize="var(--sm)">
+      <TextParagraph fontSize="var(--sm)" color="var(--white)">
         {{ content.address }}
       </TextParagraph>
     </div>

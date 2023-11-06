@@ -5,12 +5,11 @@
       :alt="image.alt ? image.alt : ''"
       :credit="image.credit ? image.credit : ''"
       :link="image.link ? image.link : ''"
-      aspectRatio="2.4/1"
       :fullBleed="true"
     />
 
     <TextH1 fontSize="var(--xxxl)"><slot name="title"></slot></TextH1>
-    <MetadataPrimary :tags="tags" :date="date" size="md" />
+    <MetadataPrimary :tags="tags" :date="date" size="md" class="metadata" />
   </header>
 </template>
 <script>
@@ -23,3 +22,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.metadata {
+  margin-top: 16px;
+}
+</style>

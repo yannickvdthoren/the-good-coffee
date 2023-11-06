@@ -13,8 +13,9 @@ head:
     - name: "copyright"
       content: "©2023 The Good Coffee."
 tags: [Places]
-place:
+details:
   {
+    type: place,
     name: Honest,
     address: "34 rue du Croissant - Halvemaanstraat, 1190 Forest - Belgium",
     maps: "https://goo.gl/maps/Znk2TyyCKRGg4Tqk6",

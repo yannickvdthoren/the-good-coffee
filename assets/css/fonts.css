@@ -47,6 +47,7 @@ h1 {
   font-family: var(--font-serif);
   font-size: var(--xxxl);
   font-weight: bold;
+  line-height: 1.2;
 }
 h2 {
   font-family: var(--font-serif);

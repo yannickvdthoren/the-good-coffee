@@ -49,7 +49,7 @@
         class="link"
         v-if="showButton === true"
       >
-        <ButtonReadMore maxWidth="10ch"> Read the post </ButtonReadMore>
+        <ButtonReadMore maxWidth="10ch"> Lire l'article </ButtonReadMore>
       </LinkPrimary>
     </div>
   </div>

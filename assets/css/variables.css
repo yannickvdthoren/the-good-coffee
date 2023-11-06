@@ -24,7 +24,7 @@
 
   --xs: clamp(10px, 2.5vw, 12px);
   --sm: clamp(12px, 2.5vw, 14px);
-  --md: clamp(14px, 2.5vw, 16px);
+  --md: 16px;
   --lg: clamp(16px, 2.5vw, 18px);
   --ml: clamp(18px, 2.5vw, 24px);
   --xl: clamp(24px, 2.5vw, 32px);

@@ -6,7 +6,7 @@
       fontFamily="var(--sans-serif)"
       fontSize="var(--ml)"
     >
-      Latest articles
+      Nos derniers articles
     </TextH2>
     <ContentList :path="'/'" :sort="[{ date: -1 }]">
       <template #default="{ list }">

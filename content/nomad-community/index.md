@@ -18,8 +18,9 @@ head:
     - name: "copyright"
       content: "©2023 The Good Coffee."
 tags: [Places]
-place:
+details:
   {
+    type: place,
     name: Nomad Community,
     address: "5 rue Vanderschrick - Vanderschrick straat, 1060 Saint-Gilles - Belgium",
     maps: "https://goo.gl/maps/5XeR5skQa3JDpcUq8",
