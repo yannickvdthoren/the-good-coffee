@@ -36,7 +36,6 @@
             <li><nuxt-link to="/">Accueil</nuxt-link></li>
             <li><a href="">A propos</a></li>
             <li><a href="mailto:yannick@the-good-coffee.com">Contact</a></li>
-            >
           </template>
         </MenuFooter>
         <MenuFooter>
