@@ -67,6 +67,9 @@
 footer {
   border-top: 1px solid var(--greenLight);
   padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
   max-width: 150px;
