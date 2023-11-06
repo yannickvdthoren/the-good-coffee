@@ -1,40 +1,42 @@
 <template>
   <aside>
-    <h3>{{ props.title }}</h3>
+    <h4>{{ details.name }}</h4>
     <address>
-      <a :href="props.details.maps" target="_blank">
-        {{ props.details.address }}
+      <a :href="details.maps" target="_blank">
+        {{ details.address }}
         <IconsExternal />
       </a>
     </address>
-    <p>Open {{ props.details.opening }}</p>
+    <p>Ouvert {{ details.opening }}</p>
     <ul>
       <li>
-        <a :href="'mailto:' + props.details.email">{{ props.details.email }}</a>
+        <a :href="'mailto:' + details.email">{{ details.email }}</a>
       </li>
       <li>
-        <a :href="props.details.website">{{ props.details.website }}</a>
+        <a :href="details.website">{{ details.website }}</a>
       </li>
       <li>
-        <a :href="'https://www.instagram.com' + props.details.instagram">
-          @{{ props.details.instagram }}
+        <a :href="'https://www.instagram.com' + details.instagram">
+          @{{ details.instagram }}
         </a>
       </li>
     </ul>
   </aside>
 </template>
-<script setup>
-const props = defineProps({
-  title: String,
-  details: Object,
-});
+<script>
+export default {
+  name: "Journal details",
+  props: {
+    details: Object,
+  },
+};
 </script>
 <style scoped>
 aside {
   padding: 24px;
   background: var(--lightestPink);
 }
-h3 {
+h4 {
   font-size: var(--lg);
   margin-bottom: 8px;
   color: var(--darkPink);

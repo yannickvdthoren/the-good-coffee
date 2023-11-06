@@ -11,23 +11,25 @@
   --orange: #fdbf66;
   --lightOrange: #f5d5a6;
   --white: #fff;
+  --green: #165152;
+  --greenLight: #16515233;
 
-  --text: var(--blue);
-  --black: var(--blue);
+  --text: var(--green);
+  --black: var(--green);
 
   --border-radius: 4px;
   --padding: 8px;
   --margin: 8px;
+  --wrap-margin: 32px;
 
-  --xxs: 10px;
-  --xs: 12px;
-  --sm: 14px;
+  --xs: clamp(10px, 2.5vw, 12px);
+  --sm: clamp(12px, 2.5vw, 14px);
   --md: 16px;
-  --lg: 18px;
-  --ml: 24px;
-  --xl: 32px;
-  --xxl: 40px;
-  --xxxl: 74px;
+  --lg: clamp(16px, 2.5vw, 18px);
+  --ml: clamp(18px, 2.5vw, 24px);
+  --xl: clamp(24px, 2.5vw, 32px);
+  --xxl: clamp(32px, 2.5vw, 40px);
+  --xxxl: clamp(40px, 10vw, 52px);
 
   --ease: 0.5s ease-in-out;
 
@@ -38,6 +40,10 @@
 
   --full-bleed: calc(50% - 50vw);
 
-  --font-sans: "Sofia Pro", Arial, Helvetica, sans-serif;
-  --font-serif: "Sole Serif", Georgia, "Times New Roman", Times, serif;
+  --shadow: 2.1px 2.1px 2.2px rgba(224, 118, 141, 0.008),
+    5.1px 5.1px 5.3px rgba(224, 118, 141, 0.012),
+    9.6px 9.6px 10px rgba(224, 118, 141, 0.015),
+    17.2px 17.2px 17.9px rgba(224, 118, 141, 0.018),
+    32.2px 32.2px 33.4px rgba(224, 118, 141, 0.022),
+    77px 77px 80px rgba(224, 118, 141, 0.03);
 }
