@@ -33,9 +33,11 @@
         <MenuFooter>
           <template v-slot:header> Sitemap </template>
           <template v-slot:list>
-            <li><nuxt-link to="/">Home</nuxt-link></li>
-            <li><a href="">About</a></li>
+            <
+            <li><nuxt-link to="/">Accueil</nuxt-link></li>
+            <li><a href="">A propos</a></li>
             <li><a href="mailto:yannick@the-good-coffee.com">Contact</a></li>
+            >
           </template>
         </MenuFooter>
         <MenuFooter>
