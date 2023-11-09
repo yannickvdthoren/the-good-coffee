@@ -13,7 +13,7 @@
         Achetez du café éthique et de qualité sur notre marketpalce
       </TextH1>
       <BannerRoasters />
-      <LinkPrimary type="nuxt" link="/market" class="link">
+      <LinkPrimary link="https://market.the-good-coffee.com/" class="link">
         <ButtonReadMore maxWidth="15ch">Acheter du bon café</ButtonReadMore>
       </LinkPrimary>
     </div>

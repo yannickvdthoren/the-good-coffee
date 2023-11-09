@@ -1,6 +1,3 @@
-import { REPEATABLEREAD } from 'sequelize/types/table-hints'; import {
-REPEATABLEREAD } from 'sequelize/types/table-hints'; import { wrap } from
-'module';
 <template>
   <ul>
     <CardRoaster
