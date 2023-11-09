@@ -26,7 +26,7 @@ Reconnaître un bon café est réalisable en examinant l'étiquette sur le sac e
 
 ## Single origin ou Blend ?
 
-La première décision que vous devrez prendre est entre l'Origine unique et le Mélange. Pour l'instant, souvenez-vous simplement qu'avec l'Origine unique, les grains de café proviennent de la même région du monde et du même producteur ou de la même ferme de lavage. C'est un café de saison, donc vous ne pourrez pas le trouver toute l'année. En revanche, le Mélange est une combinaison de différents grains de café que le torréfacteur a habilement mélangés pour créer un profil de saveur spécifique. Cela signifie qu'à chaque achat de ce café, vous pouvez vous attendre à la même saveur constante dans votre tasse.
+La première décision que vous devrez prendre est entre l'Single Origin et le Blend. Pour l'instant, souvenez-vous simplement qu'avec l'Single Origin, les grains de café proviennent de la même région du monde et du même producteur ou de la même ferme de lavage. C'est un café de saison, donc vous ne pourrez pas le trouver toute l'année. En revanche, le Blend est une combinaison de différents grains de café que le torréfacteur a habilement mélangés pour créer un profil de saveur spécifique. Cela signifie qu'à chaque achat de ce café, vous pouvez vous attendre à la même saveur constante dans votre tasse.
 
 ## Le nom
 
@@ -34,7 +34,7 @@ Parlons d'un aspect essentiel de votre café : son nom. Le nom servira de réfé
 
 ### Blen
 
-Lors de l'achat d'un mélange, le torréfacteur attribuera un nom à son mélange. Dans la plupart des cas, vous rencontrerez deux types de mélanges : Filtre et Espresso, chacun avec son nom distinct.
+Lors de l'achat d'un Blend, le torréfacteur attribuera un nom à son Blend. Dans la plupart des cas, vous rencontrerez deux types de Blends : Filtre et Espresso, chacun avec son nom distinct.
 
 ### Single Origin
 
@@ -42,9 +42,9 @@ En ce qui concerne le café provenant d'une région spécifique, le nom du café
 
 ## Saveurs
 
-Un aspect essentiel à prendre en compte lors du choix de votre café est le goût. Le défi avec le bon café est que, similaire au vin, chaque café est unique, résultant en des saveurs distinctes. Bien que les mélanges ne mettent pas en avant des saveurs individuelles de manière proéminente, les cafés d'origine unique ont tendance à avoir des profils de saveurs distincts qui sont perceptibles lorsque vous les buvez. Il est important d'avoir une compréhension des saveurs potentielles à l'avance, c'est pourquoi l'emballage inclut souvent des informations sur les saveurs présentes dans le café.
+Un aspect essentiel à prendre en compte lors du choix de votre café est le goût. Le défi avec le bon café est que, similaire au vin, chaque café est unique, résultant en des saveurs distinctes. Bien que les Blends ne mettent pas en avant des saveurs individuelles de manière proéminente, les cafés d'Single Origin ont tendance à avoir des profils de saveurs distincts qui sont perceptibles lorsque vous les buvez. Il est important d'avoir une compréhension des saveurs potentielles à l'avance, c'est pourquoi l'emballage inclut souvent des informations sur les saveurs présentes dans le café.
 
-![Exemple de deux étiquettes de café avec les différentes informations pour l'origine unique et le mélange](media/coffee-label.jpeg)
+![Exemple de deux étiquettes de café avec les différentes informations pour l'Single Origin et le Blend](media/coffee-label.jpeg)
 
 ## Traçabilité
 
@@ -52,7 +52,7 @@ De nombreux détails relèvent de cette catégorie, et c'est probablement l'un d
 
 ### Blend
 
-Pour le mélange, la traçabilité sera un peu moins détaillée car plus de grains de café sont impliqués dans la recette. Cependant, vous devriez au moins trouver le pays pour chaque grain utilisé, parfois la région, et éventuellement le ratio présent dans le sac.
+Pour le Blend, la traçabilité sera un peu moins détaillée car plus de grains de café sont impliqués dans la recette. Cependant, vous devriez au moins trouver le pays pour chaque grain utilisé, parfois la région, et éventuellement le ratio présent dans le sac.
 
 ### Single Origin
 
