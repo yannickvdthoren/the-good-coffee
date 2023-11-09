@@ -29,7 +29,7 @@ C’est un scénario qui vous est peut-être familier, et il y a différentes po
 
 C’est l’un des problèmes les plus courants. Il existe différents types de café : le café de commodité, le café Fair Trade et le café de spécialité. Si votre café est mauvais, il fait peut-être partie des deux premières catégories qui mettent moins l'accent sur un bon café et plutôt sur la vente de café en masse.
 
-Premier conseil, achetez donc un café qui est éthique et de qualité. Vous pouvez en trouver directement via une marketplace ou alors en trouver dans certains commerces. Je vous conseille la lecture de cet article si vous voulez en savoir plus sur comment reconnaître un emballage de café de qualité.
+Premier conseil, achetez donc un café qui est éthique et de qualité. Vous pouvez en trouver directement [via une marketplace](https://market.the-good-coffee.com/) ou alors en trouver dans certains commerces. Je vous conseille la lecture de cet article si vous voulez en savoir plus sur comment reconnaître un emballage de café de qualité.
 
 ## 2. La date de torréfaction
 
@@ -79,4 +79,4 @@ Si vous avez une machine à espresso, là, vous pourriez avoir un problème. La 
 
 Combien de fois faut-il laver votre machine à café ? Il faut savoir que dans tout bon coffee shop, on lave une machine à espresso tous les jours avec les produits adaptés. Vous ne devez pas nécessairement faire la même chose à la maison car vous n'utilisez pas votre machine aussi souvent. Mais laver sa machine au minimum une fois par semaine va permettre d'éviter le dépôt de café, le calcaire, etc.
 
-J'espère que ce guide vous aura été utile et que vous aurez désormais un café digne de ce nom pour vous réveiller tous les matins. Sinon, vous pouvez continuer à aller dans votre coffee shop favori, si vous en avez trouvé un près de chez vous. Et si ce n'est pas le cas, n'hésitez pas à consulter notre guide pour savoir ce qu'il faut regarder pour déceler un bon coffee shop.
+J'espère que ce guide vous aura été utile et que vous aurez désormais un café digne de ce nom pour vous réveiller tous les matins. Sinon, vous pouvez continuer à aller dans votre coffee shop favori, si vous en avez trouvé un près de chez vous. Et si ce n'est pas le cas, n'hésitez pas à consulter notre guide pour savoir [ce qu'il faut regarder pour déceler un bon coffee shop](https://the-good-coffee.com/how-to-spot-a-good-coffee-place).
