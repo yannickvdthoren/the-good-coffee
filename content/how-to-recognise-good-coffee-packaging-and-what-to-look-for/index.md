@@ -24,7 +24,7 @@ background: "#e9eaea"
 
 Reconnaître un bon café est réalisable en examinant l'étiquette sur le sac et les diverses informations que vous pouvez et souhaitez y lire. Voici une liste de tout ce qui pourrait être inclus sur une étiquette de café.
 
-## Origine unique ou Mélange?
+## Single origin ou Blend ?
 
 La première décision que vous devrez prendre est entre l'Origine unique et le Mélange. Pour l'instant, souvenez-vous simplement qu'avec l'Origine unique, les grains de café proviennent de la même région du monde et du même producteur ou de la même ferme de lavage. C'est un café de saison, donc vous ne pourrez pas le trouver toute l'année. En revanche, le Mélange est une combinaison de différents grains de café que le torréfacteur a habilement mélangés pour créer un profil de saveur spécifique. Cela signifie qu'à chaque achat de ce café, vous pouvez vous attendre à la même saveur constante dans votre tasse.
 
@@ -32,11 +32,11 @@ La première décision que vous devrez prendre est entre l'Origine unique et le 
 
 Parlons d'un aspect essentiel de votre café : son nom. Le nom servira de référence utile pour vous permettre d'identifier et de localiser facilement votre café préféré.
 
-### Mélange
+### Blen
 
 Lors de l'achat d'un mélange, le torréfacteur attribuera un nom à son mélange. Dans la plupart des cas, vous rencontrerez deux types de mélanges : Filtre et Espresso, chacun avec son nom distinct.
 
-### Origine unique
+### Single Origin
 
 En ce qui concerne le café provenant d'une région spécifique, le nom du café sera toujours lié à ce que vous achetez. Il peut être nommé d'après la région elle-même, la station de lavage, la ferme de café, le producteur, le lot, ou d'autres facteurs pertinents. Le nom servira d'identifiant pour l'origine spécifique et les caractéristiques du café que vous achetez.
 
@@ -50,11 +50,11 @@ Un aspect essentiel à prendre en compte lors du choix de votre café est le go�
 
 De nombreux détails relèvent de cette catégorie, et c'est probablement l'un des aspects les plus cruciaux en matière de café. Un bon café est traçable, ce qui signifie que des informations sur son origine et sa provenance sont facilement disponibles. S'il n'y a aucune information fournie concernant la source du café, il est conseillé de ne pas l'acheter. La traçabilité garantit la transparence et vous permet de prendre des décisions éclairées sur le café que vous achetez.
 
-### Mélange
+### Blend
 
 Pour le mélange, la traçabilité sera un peu moins détaillée car plus de grains de café sont impliqués dans la recette. Cependant, vous devriez au moins trouver le pays pour chaque grain utilisé, parfois la région, et éventuellement le ratio présent dans le sac.
 
-### Origine unique
+### Single Origin
 
 **Région**
 
