@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li>
-      <a href="https://www.instagram.com/thegoodcoffee_com/" rel="noreferrer">
+      <a href="https://www.instagram.com/thegoodcoffeedotcom/" rel="noreferrer">
         <IconsInstagram />
       </a>
     </li>
