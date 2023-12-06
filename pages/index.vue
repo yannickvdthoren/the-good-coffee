@@ -32,7 +32,7 @@
           </LinkPrimary>
         </li>
         <li>
-          <LinkPrimary link="https://www.the-good-coffee.com/">
+          <LinkPrimary link="https://the-good-coffee.com/pages/lancement">
             👉 Waiting list!
           </LinkPrimary>
         </li>
