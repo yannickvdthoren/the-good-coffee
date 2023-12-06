@@ -28,17 +28,22 @@
           <LinkPrimary
             link="https://the-good-coffee.com/blogs/journal/pourquoi-mon-cafe-n-est-pas-bon"
           >
-            Pourquoi mon café n'est pas bon ?
+            📚 Pourquoi mon café n'est pas bon ?
           </LinkPrimary>
         </li>
         <li>
           <LinkPrimary link="https://www.the-good-coffee.com/">
-            The good coffee
+            👉 Waiting list!
+          </LinkPrimary>
+        </li>
+        <li>
+          <LinkPrimary link="https://www.the-good-coffee.com/">
+            ☕️ The good coffee
           </LinkPrimary>
         </li>
         <li>
           <LinkPrimary link="https://the-good-coffee-places.com/">
-            The good coffee places
+            🗺️ The good coffee places
           </LinkPrimary>
         </li>
       </ul>
