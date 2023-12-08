@@ -25,15 +25,15 @@
       </div>
       <ul class="links">
         <li>
+          <LinkPrimary link="https://the-good-coffee.com/pages/lancement">
+            👉 Waiting list!
+          </LinkPrimary>
+        </li>
+        <li>
           <LinkPrimary
             link="https://the-good-coffee.com/blogs/journal/pourquoi-mon-cafe-n-est-pas-bon"
           >
             📚 Pourquoi mon café n'est pas bon ?
-          </LinkPrimary>
-        </li>
-        <li>
-          <LinkPrimary link="https://the-good-coffee.com/pages/lancement">
-            👉 Waiting list!
           </LinkPrimary>
         </li>
         <li>
